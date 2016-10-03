@@ -1,0 +1,140 @@
+//need to include Bootstrap for CSS and JavaScript for it to work, among other things
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Portfolio.css">
+
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+</head>
+
+<body>
+
+<!--navbar code-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        Zechy Mahler
+      </a>
+    </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+         <ul class="nav navbar-nav navbar-right">
+        <li><a href="#About">About Me</a></li>
+           <li><a href="#Port">Portfolio</a></li>
+          <li><a href="#Contact">Contact Me</a></li>
+        </ul>
+    </div>
+  </div>
+</nav>
+<!--End Navbar-->
+
+<div id="wrapper">
+
+ <div id="content">
+
+<!--About Section-->
+<div id="About" class="row">
+  <h3 class="col-xs-12">About me:</h3>
+  <img src="https://avatars.githubusercontent.com/u/8883408?v=3" class="col-xs-6 image-responsive me-photo" alt="Me">
+  <p class="col-xs-6">Hi! My name is Zechy, I am currently learning web development with FreeCodeCamp. I hope to become proficient enough to make a career out of it. Let me know what you think of my work so far!</p>
+
+  <h3 class="col-xs-12">Skills</h3>
+  <div class="row" id="About">
+  <ul class="col-xs-6">
+    <ul><h5>Current:</h5></ul>
+    <ul>HTML</ul>
+    <ul>CSS</ul>
+  </ul>
+  <ul class="col-xs-6">
+    <ul><h5>Coming Up:</h5></ul>
+    <ul>Javascript</ul>
+  </ul>
+</div>
+</div>
+<!--End About Sectiom-->
+
+<!--Portfolio Section-->
+<div id="Port">
+    <h3>portfolio</h3>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <a target="_blank" href="http://codepen.io/CrowsVeldt/pen/EyANEq"><img src="http://i.imgur.com/wNQfKL6.jpg" alt="Tribute Page Project" class="img-responsive p-photo"></a>
+            <div class="carousel-caption">
+        <a target="_blank" href="http://codepen.io/CrowsVeldt/pen/EyANEq"><h3>Tribute Page Project</h3></a>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://s15-us2.ixquick.com/cgi-bin/serveimage?url=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.M288e32eed976cf5a95a5cdb73a3ec827o0%26pid%3D15.1%26f%3D1&sp=19628ebcce2115e91d7b1971a30ef3b1" alt="Coming Soon" class="img-responsive p-photo">
+      <div class="carousel-caption">
+        <h3>More Coming Soon!</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://s15-us2.ixquick.com/cgi-bin/serveimage?url=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Maedecd3f0fbdae75d455b520840f9c73H0%26pid%3D15.1%26f%3D1&sp=58f3d7d74c369ceea42959fa93e012d6" alt="Coming Soon" class="img-responsive p-photo">
+      <div class="carousel-caption">
+        <h3>More Coming Soon!</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="https://s15-us2.ixquick.com/cgi-bin/serveimage?url=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Mc1961d6dc1b2871b9c326840884f9e2eo0%26pid%3D15.1%26f%3D1&sp=6bea2080373caf7d3cb4755472476231" alt="Coming Soon" class="img-responsive p-photo">
+      <div class="carousel-caption">
+        <h3>More Coming Soon!</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<!--End Portfolio Section-->
+
+</div> <!--end content-->
+
+
+<!--Footer Code, not sticking to bottom of screen? -->
+<footer class="footer" id="Contact">
+      <div class="container">
+        <p class="text-muted">Find Me Here:
+          <a target="_blank" href="https://www.linkedin.com/in/zechy-mahler-2a0738a2?trk=nav_responsive_tab_profile"><span class="fa fa-linkedin">LinkedIn</a>
+          <a target="_blank" href="https://www.freecodecamp.com/crowsveldt"><span class="fa fa-fire">FreeCodeCamp</a>
+            <a target="_blank" href="https://github.com/CrowsVeldt"><span class="fa fa-github">Github</a>
+              <a target="_blank" href="http://codepen.io/CrowsVeldt/"><span class="fa fa-codepen">Codepen</a>
+                </p>
+      </div>
+    </footer>
+<!--End Footer-->
+</div> <!--end wrapper-->
+</body>
+</html>

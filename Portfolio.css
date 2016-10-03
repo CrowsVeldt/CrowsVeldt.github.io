@@ -1,0 +1,66 @@
+body{
+  background-color: tan;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+#About{
+  background-color: gray;
+  margin: auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+#Port{
+  background-color: gray;
+  margin: auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+#content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/*Footer style*/
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+}
+
+h3 {
+ text-decoration: underline;
+}
+
+h5 {
+  text-decoration: underline;
+}
+
+#myCarousel{
+  margin: auto;
+  width: 60%;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+/*portfolio picture attributes*/
+.p-photo {
+  min-height: 350px;
+}
+
+/*Profile pic*/
+.me-photo {
+    border-radius: 15%;
+}
