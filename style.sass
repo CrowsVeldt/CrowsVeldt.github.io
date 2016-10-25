@@ -1,0 +1,200 @@
+//main styles
+html, body
+  font-size: 16px
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
+  position: relative
+
+h1
+  font-size: 2em
+  text-align: center
+
+h2
+  font-size: 1.5em
+
+
+h3
+  font-size: 1.2em
+  text-align: center
+
+.bgimage
+  background-image: url('https://pixabay.com/static/uploads/photo/2016/07/04/16/24/boards-1496898_960_720.jpg')
+  opacity: 0.5
+  background-size: cover
+  background-repeat: repeat-y
+  position: absolute
+  z-index: -1
+  height: 100%
+  width: 100%
+
+//header styles
+header
+  background-color: black
+  color: white
+  display: flex
+  flex-direction: row-reverse
+  justify-content: flex-start
+  position: fixed
+  width: 100%
+  height: 60px
+
+  h2
+    margin-left: 20px
+    margin-right: auto
+    align-self: center
+
+//nav section
+//on large screens
+@media(min-width: 441px)
+  //nav styles
+  nav
+    display: flex
+    margin-right: 0
+    margin-left: 100px
+
+  .main-nav
+    a,a:visited
+      color: white
+      text-decoration: none
+      padding: 20px
+
+
+    a:hover
+      color: white
+      text-decoration: none
+      padding: 20px
+      background-color: green
+
+  //hide the dropdown button
+  .mobile-nav
+    display: none
+
+//on small screens
+@media(max-width: 440px)
+  //nav style
+  nav
+    display: flex
+
+    //hide the nav links
+  .main-nav
+    display: none
+
+  //the dropdown parent styles
+  .dropdown
+    position: relative
+    display: flex
+    right: 0
+
+  //styles for the dropdown button
+  .dropbtn
+    padding: 16px
+    cursor: pointer
+    color: white
+    border: solid
+    border-width: thin
+    border-color: black
+    background-color: black
+    font-size: 16px
+
+    //when hovering over the button show dropdown-content
+  .dropbtn:hover,
+    background-color: green
+    .dropdown-content
+      position: absolute
+      display: block
+      min-width: 160px
+      background-color: #f9f9f9
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+
+      a
+       .dropdown-content
+          display: block
+          padding: 12px 16px
+          text-decoration: none
+          color: black
+          right: 0
+
+  //styles for the dropdown box
+  .dropdown-content
+    position: absolute
+    display: none
+    min-width: 160px
+    background-color: #f9f9f9
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+    right: 0
+
+    a
+        display: block
+        padding: 12px 16px
+        text-decoration: none
+        color: black
+        right: 0
+
+
+
+//section styles
+
+.intro
+  background-image: url('https://static.pexels.com/photos/29724/pexels-photo-29724.jpg')
+  height: 100vh
+  background-size: cover
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+p
+  max-width: 600px
+  margin: 0 auto 20px
+
+.about
+  background-size: cover
+  height: 100vh
+
+  h1
+    padding-top: 60px
+
+.portfolio
+  height: 100vh
+  img
+    height: 200px
+    width: 200px
+    margin-bottom: 10px
+    border: 1px solid black
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5)
+  img:hover
+      box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75)
+  h1
+    padding-top: 60px
+
+  .imagerow
+    display: flex
+    justify-content: space-around
+
+footer
+  position: absolute
+  width: 100%
+  height: 100px
+  background-color: black
+  color: white
+  bottom: 0
+  left: 0
+  display: flex
+  flex-direction: row
+  align-items: flex-end
+  justify-content: space-between
+  .links
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    max-width: 50%
+    a
+      text-decoration: none
+      color: white
+    a:hover
+      color: purple
+    p
+      margin: 0
+  .copyright
+    display: flex
+    flex-direction: column
+    align-items: flex-start
