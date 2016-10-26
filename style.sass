@@ -16,15 +16,39 @@ h3
   font-size: 1.2em
   text-align: center
 
-.bgimage
-  background-image: url('images/boards - 720.jpg')
-  opacity: 0.5
-  background-size: cover
-  background-repeat: repeat-y
-  position: absolute
-  z-index: -1
-  height: 100%
-  width: 100%
+//images
+
+//images in larger resolution for desktops
+@media(min-width: 441px)
+
+  .bgimage
+    background-image: url('images/boards - 720.jpg')
+    opacity: 0.5
+    background-size: cover
+    background-repeat: repeat-y
+    position: absolute
+    z-index: -1
+    height: 100%
+    width: 100%
+
+  .intro
+    background-image: url('images/boards - 720.jpg')
+
+//images in smaller resolution for mobile
+@media(max-width: 440px)
+
+    .bgimage
+      background-image: url('images/boards - 480.jpg')
+      opacity: 0.5
+      background-size: cover
+      background-repeat: repeat-y
+      position: absolute
+      z-index: -1
+      height: 100%
+      width: 100%
+
+      .intro
+        background-image: url('images/boards - 480.jpg')
 
 //header styles
 header
@@ -134,7 +158,6 @@ header
 //section styles
 
 .intro
-  background-image: url('images/boards - 720.jpg')
   height: 100vh
   background-size: cover
   display: flex
