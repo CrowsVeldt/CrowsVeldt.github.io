@@ -35,22 +35,42 @@ h3
     background-image: url('images/boards - 720.jpg')
     background-size: cover
 
+  .portfolio
+    img
+      height: 200px
+      width: 200px
+      margin-bottom: 10px
+      border: 1px solid black
+      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5)
+    img:hover
+        box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75)
+
 //images in smaller resolution for mobile
 @media(max-width: 440px)
 
-    .bgimage
-      background-image: url('images/boards - 480.jpg')
-      opacity: 0.5
-      background-size: cover
-      background-repeat: repeat-y
-      position: absolute
-      z-index: -1
-      height: 100%
-      width: 100%
+  .bgimage
+    background-image: url('images/boards - 480.jpg')
+    opacity: 0.5
+    background-size: cover
+    background-repeat: repeat-y
+    position: absolute
+    z-index: -1
+    height: 100%
+    width: 100%
 
-      .intro
-        background-image: url('images/boards - 480.jpg')
-        background-size: cover
+  .intro
+    background-image: url('images/boards - 480.jpg')
+    background-size: cover
+
+  .portfolio
+    img
+      height: 100px
+      width: 100px
+      margin-bottom: 10px
+      border: 1px solid black
+      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5)
+    img:hover
+        box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75)
 
 //header styles
 header
@@ -183,14 +203,6 @@ p
 
 .portfolio
   height: 100vh
-  img
-    height: 200px
-    width: 200px
-    margin-bottom: 10px
-    border: 1px solid black
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5)
-  img:hover
-      box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75)
   h1
     padding-top: 60px
 
