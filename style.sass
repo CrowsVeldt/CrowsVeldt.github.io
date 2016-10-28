@@ -6,7 +6,6 @@ html, body
 
 h1
   font-size: 2em
-  text-align: center
 
 h2
   font-size: 1.5em
@@ -14,7 +13,6 @@ h2
 
 h3
   font-size: 1.2em
-  text-align: center
 
 
 //images
@@ -36,15 +34,15 @@ h3
     background-image: url('images/boards - 720.jpg')
     background-size: cover
 
-  .portfolio
-    img
-      height: 200px
-      width: 30%
-      margin-bottom: 10px
-      border: 1px solid black
-      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5)
-    img:hover
-        box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75)
+  // .portfolio
+  //   img
+  //     height: 200px
+  //     width: 30%
+  //     margin-bottom: 10px
+  //     border: 1px solid black
+  //     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5)
+  //   img:hover
+  //       box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75)
 
 //images in smaller resolution for mobile
 @media(max-width: 440px)
@@ -63,15 +61,15 @@ h3
     background-image: url('images/boards - 480.jpg')
     background-size: cover
 
-  .portfolio
-    img
-      height: 100px
-      width: 30%
-      margin-bottom: 10px
-      border: 1px solid black
-      box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5)
-    img:hover
-        box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75)
+  // .portfolio
+  //   img
+  //     height: 100px
+  //     width: 30%
+  //     margin-bottom: 10px
+  //     border: 1px solid black
+  //     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5)
+  //   img:hover
+  //       box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75)
 
 //header styles
 header
@@ -190,6 +188,8 @@ header
 
 
 .about
+  display: flex
+  flex-direction: column
   text-align: center
 
   h1
@@ -199,20 +199,29 @@ header
     max-width: 600px
     margin: 0 auto 20px
 
-  .container
-    width: 80%
-    margin: 0 auto
-
 
 
 .portfolio
-  height: 100vh
+  text-align: center
+  padding-bottom: 200px
+
   h1
     padding-top: 60px
 
   .imagerow
     display: flex
+    flex-direction: row
+    flex-wrap: wrap
     justify-content: space-around
+
+  img
+    height: 200px
+    width: 200px
+    margin-bottom: 10px
+    border: 1px solid black
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5)
+  img:hover
+      box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75)
 
 footer
   position: absolute
