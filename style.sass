@@ -49,7 +49,7 @@ h3
   .intro
     background-image: url('images/boards - 480.jpg')
     background-size: cover
-    
+
 
 //header styles
 header
@@ -170,15 +170,27 @@ header
 .about
   display: flex
   flex-direction: column
-  text-align: center
+  align-items: center
+  border: 1px solid black
 
   h1
     padding-top: 60px
 
-  p
-    max-width: 600px
-    margin: 0 auto 20px
+  .aboutgroup1
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
 
+    img
+      width: 200px
+      height: 200px
+      border-radius: 25px
+
+    p
+      max-width: 60%
+      margin: 0 auto 20px
 
 
 .portfolio
@@ -202,6 +214,7 @@ header
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5)
   img:hover
       box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75)
+
 
 footer
   position: absolute
