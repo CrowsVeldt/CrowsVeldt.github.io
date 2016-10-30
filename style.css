@@ -1,3 +1,7 @@
+:root {
+  font-size: 16px;
+}
+
 html, body {
   font-size: 16px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -5,15 +9,15 @@ html, body {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 @media (min-width: 441px) {
@@ -121,7 +125,7 @@ header h2 {
     border-width: thin;
     border-color: black;
     background-color: black;
-    font-size: 16px;
+    font-size: 1rem;
   }
   .dropbtn:hover {
     background-color: green;
@@ -189,6 +193,7 @@ header h2 {
       -ms-flex-align: center;
           align-items: center;
   border: 1px solid black;
+  padding: 20px;
 }
 
 .about h1 {
@@ -221,7 +226,8 @@ header h2 {
 
 .about .aboutgroup1 p {
   max-width: 60%;
-  margin: 0 auto 20px;
+  min-width: 200px;
+  margin: 0 auto 10px;
 }
 
 .portfolio {
