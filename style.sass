@@ -17,6 +17,16 @@ h2
 h3
   font-size: 1.2rem
 
+hr
+    display: block
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+
+
 
 //images
 
@@ -42,8 +52,6 @@ h3
   .bgimage
     background-color: tan
     opacity: 0.5
-    background-size: cover
-    background-repeat: repeat-y
     position: absolute
     z-index: -1
     height: 100%
@@ -217,8 +225,10 @@ header
     margin-bottom: 10px
     border: 1px solid black
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5)
+    transition: box-shadow 0.25s
   img:hover
       box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75)
+
 
 
 footer
