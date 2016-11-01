@@ -226,7 +226,8 @@ header
       margin-bottom: 10px
       border: 1px solid black
       box-shadow: 0px 20px 5px -10px rgba(0,0,0,0.5)
-      transition: all ease-in-out 0.15s
+      //adds bounce to animation:
+      transition: all cubic-bezier(0.5, 0, 0.5, 3.5) 0.15s
   .project:hover
     img
       box-shadow: 0px 35px 10px -20px rgba(0,0,0,0.35)
