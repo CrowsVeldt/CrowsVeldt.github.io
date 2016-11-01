@@ -35,11 +35,11 @@ hr
 
   .bgimage
     background-image: url('images/boards - 720.jpg')
-    opacity: 0.5
     background-size: cover
     background-repeat: repeat-y
+    opacity: 0.5
     position: absolute
-    z-index: -1
+    z-index: -5
     height: 100%
     width: 100%
 
@@ -184,6 +184,7 @@ header
   align-items: center
   border: 1px solid black
   padding: 20px
+  height: 100vh
 
   h1
     padding-top: 60px
@@ -209,25 +210,33 @@ header
 .portfolio
   text-align: center
   padding-bottom: 120px
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-around
 
   h1
     padding-top: 60px
 
-  .imagerow
-    display: flex
-    flex-direction: row
-    flex-wrap: wrap
-    justify-content: space-around
+  .project
+    img
+      height: 200px
+      width: 200px
+      margin-bottom: 10px
+      border: 1px solid black
+      box-shadow: 0px 20px 5px -10px rgba(0,0,0,0.5)
+      transition: box-shadow ease-in-out 0.15s
+  .project:hover
+    img
+      box-shadow: 0px 35px 10px -20px rgba(0,0,0,0.35)
+      transform: translate(0px, -5px)
 
   img
     height: 200px
     width: 200px
-    margin-bottom: 10px
+    margin: 20px
     border: 1px solid black
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5)
-    transition: box-shadow 0.25s
-  img:hover
-      box-shadow: 15px 15px 10px 0px rgba(0,0,0,0.75)
 
 
 
