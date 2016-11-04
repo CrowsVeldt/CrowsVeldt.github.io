@@ -343,3 +343,7 @@ footer .copyright {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.hidden {
+  display: none;
+}

@@ -8,8 +8,7 @@ doctype html
 //TODO 5. resize portfolio images to center contents
 //TODO 6. size up fonts on mobile
 //TODO 7. Redo background image
-
-//TODO: Animate the portfolio section, so when the user clicks on an image the space between the image-rows opens up and shows details about the projects. Also make the other project images more opaque.
+//TODO 8. Redo portfolio with divs
 
 
 html
@@ -53,12 +52,12 @@ html
 
         p I am a huge fan of technology and the web. I started my journey into a deeper understanding of the technology behind the internet a few months ago.
 
-      h3 My Skills:
+      h3 What do I know?
 
-      ul
+      ol
         li HTML, CSS, Javascript
-        li Bootstrap, and Jquery
-        li git, github
+        li Jquery
+        li Github
 
     section.portfolio#portfolio
       h1 Some cool things I've done:
@@ -69,12 +68,16 @@ html
           img(src='images/Random Quote.png' alt='Random Quote Generator')
         a.project(href='https://codepen.io/CrowsVeldt/pen/EgyGpP' target='_blank')
           img(src='images/Local Weather.png' alt='Local Weather App')
+
+      //work in progress:
+      div.hidden#project1
+
       div.imagerow
         a.project(href='https://crowsveldt.github.io/Free-Code-Camp-Wikipedia-Viewer/' target='_blank')
           img(src='images/Wiki Viewer.png' alt='Wikipedia Viewer')
         a.project(href='https://crowsveldt.github.io/do-not-go-gentle-into-that-good-night/' target='_blank')
           img(src='images/Do Not Go Gentle.png' alt='Animated Poem')
-        img(src='http://www.360fashion.net/wp-content/uploads/2012/09/image-placeholder-500x500.jpg' alt='Placeholder Image')
+        img#test(src='http://www.360fashion.net/wp-content/uploads/2012/09/image-placeholder-500x500.jpg' alt='Placeholder Image')
 
     footer
       div.links
@@ -87,3 +90,7 @@ html
           span.fa.fa-codepen  Codepen
       div.copyright
         p Made with Atom, Pug, and Sass by Zecharia Mahler, Copyright 2016
+
+
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+    script(src='script.js')
