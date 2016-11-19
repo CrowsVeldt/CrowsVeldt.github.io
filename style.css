@@ -193,11 +193,17 @@ header h2 {
           align-items: center;
   border: 1px solid black;
   padding: 20px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .about h1 {
   padding-top: 60px;
+}
+
+.about .logo {
+  margin-top: 20px;
+  height: 160px;
+  width: 160px;
 }
 
 .about .aboutgroup1 {
@@ -219,13 +225,14 @@ header h2 {
 }
 
 .about .aboutgroup1 img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 25px;
+  margin: 20px;
 }
 
 .about .aboutgroup1 p {
-  max-width: 60%;
+  max-width: 40%;
   min-width: 200px;
   margin: 0 auto 10px;
 }
