@@ -200,12 +200,6 @@ header h2 {
   padding-top: 60px;
 }
 
-.about .logo {
-  margin-top: 20px;
-  height: 160px;
-  width: 160px;
-}
-
 .about .aboutgroup1 {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -225,8 +219,8 @@ header h2 {
 }
 
 .about .aboutgroup1 img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 25px;
   margin: 20px;
 }
@@ -235,6 +229,24 @@ header h2 {
   max-width: 40%;
   min-width: 200px;
   margin: 0 auto 10px;
+}
+
+.about .aboutgroup2 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.about .aboutgroup2 .logo {
+  margin: 20px;
+  height: 160px;
+  width: 160px;
 }
 
 .portfolio {
