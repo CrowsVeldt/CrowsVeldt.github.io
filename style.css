@@ -188,6 +188,11 @@ header h2 {
   min-height: 100vh;
 }
 
+.about p {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
 .about h1 {
   padding-top: 60px;
 }
