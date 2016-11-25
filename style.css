@@ -213,6 +213,7 @@ header h2 {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 20px;
 }
 
 .about .aboutgroup1 img {
@@ -228,7 +229,7 @@ header h2 {
   margin: 0 auto 10px;
 }
 
-.about .aboutgroup2 {
+.about .logogroup1 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -238,9 +239,10 @@ header h2 {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-.about .aboutgroup2 .logo {
+.about .logogroup1 .logo {
   margin: 20px;
   height: 160px;
   width: 160px;
