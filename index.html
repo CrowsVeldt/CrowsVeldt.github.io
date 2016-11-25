@@ -2,11 +2,9 @@
 <!--TODO 1. add a Contact section-->
 <!--TODO 2. improve About section text-->
 <!--TODO 3. Find out how to make the dropdown links work on my phone-->
-<!--TODO 4. Fix the contents of the footer for mobile-->
 <!--TODO 5. resize portfolio images to center contents-->
 <!--TODO 6. size up fonts on mobile-->
 <!--TODO 7. Redo background image-->
-<!--TODO 8. Redo portfolio with divs-->
 
 <html>
   <head>
@@ -20,11 +18,21 @@
   <body>
     <div class="bgimage"></div>
     <header>
-      <nav class="main-nav"><a href="#intro">Top</a><a href="#about">About Me</a><a href="#portfolio">My Portfolio</a></nav>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#intro">Top</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">My Portfolio</a></li>
+        </ul>
+      </nav>
       <nav class="mobile-nav">
         <div class="dropdown">
           <button class="dropbtn">Menu
-            <div class="dropdown-content"><a href="#intro">Top</a><a href="#about">About Me</a><a href="#portfolio">My Portfolio</a></div>
+            <div class="dropdown-content">
+              <li><a href="#intro">Top</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#portfolio">My Portfolio</a></li>
+            </div>
           </button>
         </div>
       </nav>
