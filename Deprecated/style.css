@@ -86,13 +86,12 @@ header h2 {
   }
   .main-nav li {
     float: left;
-    list-style-type: none;
+    padding: 18px;
   }
   .main-nav a, .main-nav a:visited {
-    padding: 18px;
-    display: inline-block;
-    text-decoration: none;
+    list-style-type: none;
     color: white;
+    text-decoration: none;
   }
   .main-nav li:hover {
     background-color: green;
