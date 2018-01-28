@@ -1,9 +1,19 @@
 import React from 'react'
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <div>
-    <h1>Welcome to my Site</h1>
+    <h1>Welcome to {data.site.siteMetadata.title}</h1>
   </div>
-)
+  )
 
 export default IndexPage
+
+export const query = graphql`
+  query FrontPageQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

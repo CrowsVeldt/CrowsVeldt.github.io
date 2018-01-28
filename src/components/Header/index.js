@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Header = () => (
+const Header = ({data}) => (
   <div
     style={{
       background: 'rebeccapurple',
@@ -23,7 +23,7 @@ const Header = () => (
             textDecoration: 'none'
           }}
         >
-          My Page
+          {data.site.siteMetadata.title}
         </Link>
       </h1>
     </div>
@@ -31,3 +31,13 @@ const Header = () => (
 )
 
 export default Header
+
+export const query = graphql`
+  query HeaderQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
