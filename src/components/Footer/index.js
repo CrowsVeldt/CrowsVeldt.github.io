@@ -1,11 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Header = () => (
+const Footer = () => (
   <div
     style={{
-      background: 'black',
-      marginBottom: '1.45rem'
+      background: 'black'
     }}
   >
     <div
@@ -30,10 +29,10 @@ const Header = () => (
   </div>
 )
 
-export default Header
+export default Footer
 
 export const query = graphql`
-  query HeaderQuery {
+  query FooterQuery {
     site {
       siteMetadata {
         title
