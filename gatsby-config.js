@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Zechy\'s Site',
+    title: 'Zechy\'s Awesome Site',
     author: 'Zechariah Mahler'
   },
   plugins: [

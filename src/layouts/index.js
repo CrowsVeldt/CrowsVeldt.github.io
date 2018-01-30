@@ -11,7 +11,9 @@ const TemplateWrapper = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
     />
-    <Header />
+    <Header
+      title={data.site.siteMetadata.title}
+    />
     <div
       style={{
         margin: '0 auto',
@@ -22,7 +24,9 @@ const TemplateWrapper = ({ children, data }) => (
     >
       {children()}
     </div>
-    <Footer />
+    <Footer
+      title={data.site.siteMetadata.title}
+    />
   </div>
 )
 
