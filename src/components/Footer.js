@@ -14,17 +14,12 @@ const Footer = ({title}) => (
         padding: '1.45rem 1.0875rem'
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to='/'
-          style={{
-            color: 'white',
-            textDecoration: 'none'
-          }}
-        >
-          {title}
-        </Link>
-      </h1>
+      <h4 style={{
+        margin: 0,
+        color: 'white'
+      }}>
+        Copyright blah blah blah
+      </h4>
     </div>
   </div>
 )

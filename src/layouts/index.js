@@ -24,9 +24,7 @@ const TemplateWrapper = ({ children, data }) => (
     >
       {children()}
     </div>
-    <Footer
-      title={data.site.siteMetadata.title}
-    />
+    <Footer />
   </div>
 )
 
