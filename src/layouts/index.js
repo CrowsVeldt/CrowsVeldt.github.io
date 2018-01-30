@@ -32,7 +32,7 @@ TemplateWrapper.propTypes = {
 
 export default TemplateWrapper
 
-export const query = graphql`
+export const layoutQuery = graphql`
   query LayoutQuery {
     site {
       siteMetadata {

@@ -8,7 +8,7 @@ const IndexPage = ({data}) => (
 
 export default IndexPage
 
-export const query = graphql`
+export const frontPageQuery = graphql`
   query FrontPageQuery {
     site {
       siteMetadata {
