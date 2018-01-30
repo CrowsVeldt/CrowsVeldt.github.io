@@ -17,11 +17,15 @@ const IndexPage = ({data}) => (
     >
     Welcome to my site!
     </h1>
-    <p>
+    <article
+      style={{
+        maxWidth: '600px'
+      }}
+      >
       I put this together to have a place to put all the stuff I do.
       Please take a look, and if you find anything interesting let me
       know!
-    </p>
+    </article>
   </div>
   )
 
