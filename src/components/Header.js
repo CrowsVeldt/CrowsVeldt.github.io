@@ -12,7 +12,9 @@ const Header = ({title}) => (
       style={{
         margin: '0 auto',
         maxWidth: 960,
-        padding: '1.45rem 1.0875rem'
+        padding: '1.45rem 1.0875rem',
+        display: 'flex',
+        justifyContent: 'space-between'
       }}
     >
       <h4 style={{ margin: 0 }}>
@@ -26,36 +28,37 @@ const Header = ({title}) => (
           {title}
         </Link>
       </h4>
-      <Link
-        to='/about'
-        style={{
-          color: 'white',
-          textDecoration: 'none',
-          marginRight: '1rem'
-        }}
-          >
-        about
-      </Link>
-      <Link
-        to='/projects'
-        style={{
-          color: 'white',
-          textDecoration: 'none',
-          marginRight: '1rem'
-        }}
-          >
-        projects
-      </Link>
-      <Link
-        to='/blog'
-        style={{
-          color: 'white',
-          textDecoration: 'none',
-          marginRight: '1rem'
-        }}
-          >
-        blog
-      </Link>
+      <nav>
+        <Link
+          to='/about'
+          style={{
+            color: 'white',
+            textDecoration: 'none',
+            marginRight: '1rem'
+          }}
+            >
+          About Me
+        </Link>
+        <Link
+          to='/projects'
+          style={{
+            color: 'white',
+            textDecoration: 'none',
+            marginRight: '1rem'
+          }}
+            >
+          Projects
+        </Link>
+        <Link
+          to='/blog'
+          style={{
+            color: 'white',
+            textDecoration: 'none'
+          }}
+            >
+          Blog
+        </Link>
+      </nav>
     </div>
   </div>
 )
