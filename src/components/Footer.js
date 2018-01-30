@@ -14,12 +14,12 @@ const Footer = ({title}) => (
         padding: '1.45rem 1.0875rem'
       }}
     >
-      <h4 style={{
+      <p style={{
         margin: 0,
         color: 'white'
       }}>
-        Copyright blah blah blah
-      </h4>
+        Copyright © Zechariah Mahler (2018)
+      </p>
     </div>
   </div>
 )

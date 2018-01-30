@@ -17,7 +17,7 @@ const Header = ({title}) => (
         justifyContent: 'space-between'
       }}
     >
-      <h4 style={{ margin: 0 }}>
+      <p style={{ margin: 0 }}>
         <Link
           to='/'
           style={{
@@ -27,7 +27,7 @@ const Header = ({title}) => (
         >
           {title}
         </Link>
-      </h4>
+      </p>
       <nav>
         <Link
           to='/about'
