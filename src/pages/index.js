@@ -1,4 +1,5 @@
 import React from 'react'
+import boards from '../res/boards.jpg'
 
 const IndexPage = ({data}) => (
   <div
@@ -6,10 +7,21 @@ const IndexPage = ({data}) => (
       minHeight: '80vh',
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center'
-      // put the wood background image in here
+      alignItems: 'center',
+      color: 'white',
+      textShadow: '2px 2px 2px black'
     }}
   >
+    <img src={boards} alt='Wood boards'
+      style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        zIndex: -1,
+        height: '100vh',
+        width: '100vw'
+      }}
+    />
     <h1
       style={{
         fontSize: '2rem'
@@ -22,9 +34,7 @@ const IndexPage = ({data}) => (
         maxWidth: '600px'
       }}
       >
-      I put this together to have a place to put all the stuff I do.
-      Please take a look, and if you find anything interesting let me
-      know!
+      This is where I showcase all the stuff I make. Let me know what you think!
     </article>
   </div>
   )
