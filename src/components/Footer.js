@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Footer = ({title}) => (
-  <div
+  <footer
     style={{
       background: 'black'
     }}
@@ -10,6 +10,7 @@ const Footer = ({title}) => (
       style={{
         margin: '0 auto',
         maxWidth: 960,
+        padding: '.5rem 1.0875rem',
         display: 'flex',
         justifyContent: 'space-between'
       }}
@@ -41,7 +42,7 @@ const Footer = ({title}) => (
         >LinkedIn</a>
       </div>
     </div>
-  </div>
+  </footer>
 )
 
 export default Footer
