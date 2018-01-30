@@ -12,7 +12,7 @@ const Header = ({title}) => (
         margin: '0 auto',
         height: '4.5rem',
         maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
+        padding: '1.25rem 1rem',
         display: 'flex',
         justifyContent: 'space-between'
       }}

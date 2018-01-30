@@ -11,7 +11,7 @@ const Footer = ({title}) => (
         margin: '0 auto',
         height: '3.5rem',
         maxWidth: 960,
-        padding: '.5rem 1.0875rem',
+        padding: '1rem 0.5rem',
         display: 'flex',
         justifyContent: 'space-between'
       }}
