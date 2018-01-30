@@ -1,11 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import PropTypes from 'prop-types'
+import React from 'react'
 
-import boards from '../res/boards.jpg'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 import './index.css'
+import boards from '../res/boards.jpg'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 
 const TemplateWrapper = ({ children, data }) => (
   <div>
@@ -13,19 +13,36 @@ const TemplateWrapper = ({ children, data }) => (
       title={data.site.siteMetadata.title}
     />
     <Header
-      title={data.site.siteMetadata.title}
+      title='Front Page'
     />
     <div
       style={{
         margin: '0 auto',
-        maxWidth: 960,
+        width: '100vw',
         padding: '0px 1.45rem',
         paddingTop: 0,
         backgroundImage: `url(${boards})`,
-        backgroundRepeat: 'round'
+        backgroundRepeat: 'round',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
       }}
     >
-      {children()}
+      <div
+        className='page-content'
+        style={{
+          margin: 0,
+          padding: '1rem',
+          maxWidth: '60vw',
+          height: 'calc(100vh - 8rem)',
+          backgroundColor: 'tan',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center'
+        }}
+      >
+        {children()}
+      </div>
     </div>
     <Footer />
   </div>
