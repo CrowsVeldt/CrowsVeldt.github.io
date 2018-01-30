@@ -7,9 +7,7 @@ const IndexPage = ({data}) => (
       minHeight: '80vh',
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center',
-      color: 'white',
-      textShadow: '2px 2px 2px black'
+      alignItems: 'center'
     }}
   >
     <img src={boards} alt='Wood boards'
@@ -19,22 +17,32 @@ const IndexPage = ({data}) => (
         left: 0,
         zIndex: -1,
         height: '100vh',
-        width: '100vw'
+        width: '100vw',
+        opacity: '0.9'
       }}
     />
     <h1
       style={{
-        fontSize: '2rem'
+        fontSize: '2rem',
+        textShadow: '0px 0px 25px white'
       }}
     >
-    Welcome to my site!
+    Hey, Welcome to my site!
     </h1>
     <article
       style={{
-        maxWidth: '600px'
+        maxWidth: '600px',
+        backgroundColor: '#806517',
+        border: '1px solid black',
+        textAlign: 'center',
+        boxShadow: '2px 2px 10px black'
       }}
       >
-      This is where I showcase all the stuff I make. Let me know what you think!
+      My name is Zechariah Mahler, and I have been cursed with a constant urge
+      to <em>make things</em>, and despite my best efforts I havn't managed
+      to make it go away. So I've given up, and I'm making this site as place
+      to put all the things I make along the way. Feel free to take a look
+      and let me know what you think!
     </article>
   </div>
   )
