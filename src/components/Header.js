@@ -1,5 +1,6 @@
-import React from 'react'
+import { css } from 'gatsby-plugin-glamor'
 import Link from 'gatsby-link'
+import React from 'react'
 
 const Header = ({title}) => (
   <header
@@ -8,7 +9,7 @@ const Header = ({title}) => (
     }}
   >
     <div
-      style={{
+      css={{
         margin: '0 auto',
         height: '4.5rem',
         maxWidth: 960,
@@ -20,9 +21,13 @@ const Header = ({title}) => (
       <p style={{ margin: 0 }}>
         <Link
           to='/'
-          style={{
+          css={{
             color: 'white',
-            textDecoration: 'none'
+            textDecoration: 'none',
+            ':hover': {
+              color: 'green',
+              textDecoration: 'underline'
+            }
           }}
         >
           {title}
@@ -31,29 +36,41 @@ const Header = ({title}) => (
       <nav>
         <Link
           to='/about'
-          style={{
+          css={{
             color: 'white',
             textDecoration: 'none',
-            marginRight: '1rem'
+            marginRight: '1rem',
+            ':hover': {
+              color: 'green',
+              textDecoration: 'underline'
+            }
           }}
             >
           About Me
         </Link>
         <Link
           to='/projects'
-          style={{
+          css={{
             color: 'white',
             textDecoration: 'none',
-            marginRight: '1rem'
+            marginRight: '1rem',
+            ':hover': {
+              color: 'green',
+              textDecoration: 'underline'
+            }
           }}
             >
           Projects
         </Link>
         <Link
           to='/blog'
-          style={{
+          css={{
             color: 'white',
-            textDecoration: 'none'
+            textDecoration: 'none',
+            ':hover': {
+              color: 'green',
+              textDecoration: 'underline'
+            }
           }}
             >
           Blog
