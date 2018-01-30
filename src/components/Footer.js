@@ -9,6 +9,7 @@ const Footer = ({title}) => (
     <div
       style={{
         margin: '0 auto',
+        height: '3.5rem',
         maxWidth: 960,
         padding: '.5rem 1.0875rem',
         display: 'flex',

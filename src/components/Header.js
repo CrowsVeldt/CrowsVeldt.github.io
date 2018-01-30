@@ -4,13 +4,13 @@ import Link from 'gatsby-link'
 const Header = ({title}) => (
   <header
     style={{
-      background: 'black',
-      marginBottom: '1.45rem'
+      background: 'black'
     }}
   >
     <div
       style={{
         margin: '0 auto',
+        height: '4.5rem',
         maxWidth: 960,
         padding: '1.45rem 1.0875rem',
         display: 'flex',
