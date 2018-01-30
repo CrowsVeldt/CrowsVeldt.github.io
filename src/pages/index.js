@@ -1,5 +1,4 @@
 import React from 'react'
-import boards from '../res/boards.jpg'
 
 const IndexPage = ({data}) => (
   <div
@@ -23,18 +22,6 @@ const IndexPage = ({data}) => (
         alignItems: 'center'
       }}
     >
-      <img src={boards} alt='Wood boards'
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          zIndex: -1,
-          height: '100vh',
-          width: '100vw',
-          opacity: '0.9'
-        }}
-      />
-
       <h1
         style={{
           fontSize: '2rem',
