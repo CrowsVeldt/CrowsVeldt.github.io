@@ -18,8 +18,6 @@ const TemplateWrapper = ({ children, data }) => (
     <div
       style={{
         margin: '0 auto',
-        padding: '0px 1.45rem',
-        paddingTop: 0,
         width: '100vw',
 
         display: 'flex',
@@ -34,9 +32,8 @@ const TemplateWrapper = ({ children, data }) => (
         className='page-content'
         style={{
           margin: 0,
-          padding: '1rem',
           width: '80vw',
-          height: 'calc(100vh - 8rem)',
+          minHeight: 'calc(100vh - 8rem)',
 
           display: 'flex',
           flexDirection: 'column',

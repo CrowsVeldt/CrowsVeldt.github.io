@@ -3,26 +3,42 @@ import React from 'react'
 
 const Header = ({title}) => (
   <header
-    style={{
+    css={{
+      height: '4.5rem',
+      display: 'flex',
+      justifyContent: 'space-between',
       background: 'black'
     }}
   >
-    <div
+    <NavLink to='/' title={title} />
+    <nav
       css={{
-        margin: '0 auto',
-        height: '4.5rem',
-        padding: '1.25rem 1rem',
-        display: 'flex',
-        justifyContent: 'space-between'
+        alignSelf: 'stretch'
       }}
     >
-      <NavLink to='/' title={title} />
-      <nav>
-        <NavLink to='/about' title='About Me' />
-        <NavLink to='/projects' title='Projects' />
-        <NavLink to='/blog' title='Blog' />
-      </nav>
-    </div>
+      <ul
+        css={{
+          display: 'flex',
+          flexDirection: 'row',
+
+          listStyleType: 'none',
+
+          '@media(max-width: 520px)': {
+            display: 'flex',
+            flexDirection: 'column'
+          }
+        }}>
+        <li>
+          <NavLink to='/about' title='About Me' />
+        </li>
+        <li>
+          <NavLink to='/projects' title='Projects' />
+        </li>
+        <li>
+          <NavLink to='/blog' title='Blog' />
+        </li>
+      </ul>
+    </nav>
   </header>
 )
 

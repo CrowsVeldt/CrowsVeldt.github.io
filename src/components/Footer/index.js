@@ -23,7 +23,6 @@ const Footer = ({title}) => (
         display: 'flex',
         '@media(max-width: 520px)': {
           marginRight: '1rem',
-          display: 'flex',
           flexDirection: 'column'
         }
       }}

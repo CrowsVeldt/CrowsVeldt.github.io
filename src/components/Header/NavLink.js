@@ -2,20 +2,31 @@ import Link from 'gatsby-link'
 import React from 'react'
 
 const NavLink = ({title, to}) => (
-  <Link
-    to={to}
+  <span
     css={{
-      color: 'white',
-      marginRight: '1rem',
-      textDecoration: 'none',
+      height: '4.5rem',
+
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      background: 'black',
       ':hover': {
-        color: 'green',
-        textDecoration: 'underline'
+        background: 'green'
       }
     }}
   >
-    {title}
-  </Link>
+    <Link
+      to={to}
+      css={{
+        color: 'white',
+        marginRight: '1rem',
+        marginLeft: '1rem',
+        textDecoration: 'none'
+      }}
+    >
+      {title}
+    </Link>
+  </span>
 )
 
 export default NavLink
