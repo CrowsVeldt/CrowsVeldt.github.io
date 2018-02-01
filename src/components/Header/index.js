@@ -11,7 +11,6 @@ const Header = ({title}) => (
       css={{
         margin: '0 auto',
         height: '4.5rem',
-        maxWidth: 960,
         padding: '1.25rem 1rem',
         display: 'flex',
         justifyContent: 'space-between'

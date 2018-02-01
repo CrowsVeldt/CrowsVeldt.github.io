@@ -10,7 +10,6 @@ const Footer = ({title}) => (
       style={{
         margin: '0 auto',
         height: '3.5rem',
-        maxWidth: 960,
         padding: '1rem 0.5rem',
         display: 'flex',
         justifyContent: 'space-between'
