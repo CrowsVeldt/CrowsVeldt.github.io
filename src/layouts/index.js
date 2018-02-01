@@ -4,8 +4,8 @@ import React from 'react'
 
 import './index.css'
 import boards from '../res/boards.jpg'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+import Footer from '../components/Footer/index'
+import Header from '../components/Header/index'
 
 const TemplateWrapper = ({ children, data }) => (
   <div>
