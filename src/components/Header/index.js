@@ -17,9 +17,7 @@ const Header = ({title}) => (
         justifyContent: 'space-between'
       }}
     >
-      <p style={{ margin: 0 }}>
-        <NavLink to='/' title={title} />
-      </p>
+      <NavLink to='/' title={title} />
       <nav>
         <NavLink to='/about' title='About Me' />
         <NavLink to='/projects' title='Projects' />

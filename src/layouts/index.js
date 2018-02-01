@@ -18,14 +18,16 @@ const TemplateWrapper = ({ children, data }) => (
     <div
       style={{
         margin: '0 auto',
-        width: '100vw',
         padding: '0px 1.45rem',
         paddingTop: 0,
-        backgroundImage: `url(${boards})`,
-        backgroundRepeat: 'round',
+        width: '100vw',
+
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center'
+        alignItems: 'center',
+
+        backgroundImage: `url(${boards})`,
+        backgroundRepeat: 'round'
       }}
     >
       <div
@@ -33,12 +35,15 @@ const TemplateWrapper = ({ children, data }) => (
         style={{
           margin: 0,
           padding: '1rem',
-          maxWidth: '60vw',
+          width: '80vw',
           height: 'calc(100vh - 8rem)',
-          backgroundColor: 'tan',
+
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center'
+          alignItems: 'center',
+
+          backgroundColor: 'tan',
+          boxShadow: '0 0 10px black'
         }}
       >
         {children()}
