@@ -24,7 +24,7 @@
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "jest --watch",
-    "deploy": "gatsby build && surge public/ -d thisthingidid.surge.sh"
+    "deploy": "gatsby build && surge public/ -d https://thisthingidid.surge.sh"
   },
   "devDependencies": {
     "jest": "^22.1.4",
