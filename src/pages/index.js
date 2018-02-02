@@ -1,6 +1,6 @@
 import React from 'react'
 
-const IndexPage = ({data}) => (
+const IndexPage = () => (
   <div
     className='page-container'
     style={{
@@ -37,13 +37,3 @@ const IndexPage = ({data}) => (
   )
 
 export default IndexPage
-
-export const frontPageQuery = graphql`
-  query FrontPageQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
