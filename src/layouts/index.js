@@ -17,7 +17,7 @@ const TemplateWrapper = ({ children, data }) => (
     />
     <div
       className='boards'
-      style={{
+      css={{
         margin: '0 auto',
         width: '100%',
 
@@ -31,7 +31,7 @@ const TemplateWrapper = ({ children, data }) => (
     >
       <div
         className='page-contents-container'
-        style={{
+        css={{
           margin: 0,
           width: '80vw',
           minHeight: 'calc(100vh - 8rem)',

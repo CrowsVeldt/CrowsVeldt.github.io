@@ -18,7 +18,7 @@ const AboutPage = () => (
         borderBottom: '2px groove black'
       }}
     >
-      About Me
+      A Little About Me
     </h1>
     <article
       css={{

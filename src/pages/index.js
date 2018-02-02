@@ -1,3 +1,4 @@
+import Link from 'gatsby-link'
 import React from 'react'
 
 const IndexPage = () => (
@@ -18,20 +19,28 @@ const IndexPage = () => (
         borderBottom: '2px groove black'
       }}
     >
-      Welcome to my site!
+      This Thing I Did
       </h1>
     <article
       css={{
-        padding: '20px',
         maxWidth: '540px',
         fontWeight: 'bold'
       }}
     >
-      <p>All my life I have been cursed with a constant urge to <em>make things</em>.</p>
-      <p>I tried to ignore it, but failed miserably.</p>
-      <p>I've built this site as a place to put all the things I make along the way.</p>
-      <p>Feel free to take a look, and let me know what you think!</p>
+      <p>I've built this site as a place to put all the things I make and write.</p>
+      <p>Take a look and let me know what you think!</p>
     </article>
+    <div
+      css={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'start'
+      }}
+    >
+      <Link to='/about'>A Little About Me</Link>
+      <Link to='/projects'>Things I Built</Link>
+      <Link to='/blog'>Things I Wrote</Link>
+    </div>
   </div>
   )
 
