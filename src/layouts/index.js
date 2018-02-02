@@ -40,7 +40,7 @@ const TemplateWrapper = ({ children, data }) => (
           flexDirection: 'column',
           alignItems: 'center',
 
-          backgroundColor: 'tan',
+          backgroundColor: '#dddddd',
           boxShadow: '0px 11px 10px black'
         }}
       >
