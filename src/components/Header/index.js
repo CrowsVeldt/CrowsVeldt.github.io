@@ -21,14 +21,13 @@ const Header = ({title}) => (
           display: 'flex',
           flexDirection: 'row',
 
-          listStyleType: 'none',
-
-          '@media(max-width: 520px)': {
-            display: 'flex',
-            flexDirection: 'column'
-          }
+          listStyleType: 'none'
         }}>
-        <li>
+        <li
+          css={{
+            padding: '0px'
+          }}
+        >
           <NavLink to='/about' title='About Me' />
         </li>
         <li>
