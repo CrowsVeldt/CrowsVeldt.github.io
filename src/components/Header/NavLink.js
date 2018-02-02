@@ -12,18 +12,18 @@ const NavLink = ({title, to}) => (
       ':hover': {
         background: 'green'
       },
-
-      fontAlign: 'center',
-      lineHeight: '4.5rem'
+      ':active': {
+        background: 'darkgreen'
+      }
     }}
   >
     <Link
       to={to}
       css={{
-        marginRight: '1rem',
-        marginLeft: '1rem',
+        paddingRight: '1rem',
+        paddingLeft: '1rem',
+        paddingTop: 'calc(50% - 1rem)',
         height: '100%',
-        maxWidth: '100px',
 
         display: 'block',
 

@@ -23,11 +23,7 @@ const Header = ({title}) => (
 
           listStyleType: 'none'
         }}>
-        <li
-          css={{
-            padding: '0px'
-          }}
-        >
+        <li >
           <NavLink to='/about' title='About Me' />
         </li>
         <li>
