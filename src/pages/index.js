@@ -6,7 +6,7 @@ const IndexPage = () => (
     style={{
       marginTop: '1rem',
       padding: '5rem 2rem 5rem 2rem',
-      width: '60vh',
+      maxWidth: '60vh',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center'
@@ -15,7 +15,8 @@ const IndexPage = () => (
     <h1
       style={{
         fontSize: '2rem',
-        borderBottom: '2px groove black'
+        borderBottom: '2px groove black',
+        textAlign: 'center'
       }}
     >
       Welcome to my site!
@@ -29,7 +30,7 @@ const IndexPage = () => (
       }}
     >
       <p>All my life I have been cursed with a constant urge to <em>make things</em>.</p>
-      <p>I tried to ignore it, but I failed miserably.</p>
+      <p>I tried to ignore it, but failed miserably.</p>
       <p>I've built this site as a place to put all the things I make along the way.</p>
       <p>Feel free to take a look, and let me know what you think!</p>
     </article>
