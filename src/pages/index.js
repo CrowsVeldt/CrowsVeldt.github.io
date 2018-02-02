@@ -3,30 +3,28 @@ import React from 'react'
 const IndexPage = () => (
   <div
     className='page-container'
-    style={{
-      marginTop: '1rem',
-      padding: '5rem 2rem 5rem 2rem',
+    css={{
+      padding: '3rem 2rem 3rem 2rem',
       maxWidth: '60vh',
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center'
+      alignItems: 'center',
+      textAlign: 'center'
     }}
   >
     <h1
-      style={{
+      css={{
         fontSize: '2rem',
-        borderBottom: '2px groove black',
-        textAlign: 'center'
+        borderBottom: '2px groove black'
       }}
     >
       Welcome to my site!
       </h1>
     <article
-      style={{
+      css={{
         padding: '20px',
         maxWidth: '540px',
-        fontWeight: 'bold',
-        textAlign: 'center'
+        fontWeight: 'bold'
       }}
     >
       <p>All my life I have been cursed with a constant urge to <em>make things</em>.</p>

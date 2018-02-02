@@ -30,7 +30,7 @@ const TemplateWrapper = ({ children, data }) => (
       }}
     >
       <div
-        className='page-content'
+        className='page-contents-container'
         style={{
           margin: 0,
           width: '80vw',

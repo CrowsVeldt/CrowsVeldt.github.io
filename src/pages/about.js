@@ -1,24 +1,75 @@
 import React from 'react'
 
 const AboutPage = () => (
-  <div>
-    <h1>title</h1>
-    <img src='' alt='A picture of me' />
-    <article>
-      <h2>subtitle</h2>
-      <p>paragraph about me</p>
+  <div
+    className='page-container'
+    css={{
+      padding: '3rem 2rem 3rem 2rem',
+      maxWidth: '60vh',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      textAlign: 'center'
+    }}
+  >
+    <h1
+      css={{
+        fontSize: '2rem',
+        borderBottom: '2px groove black'
+      }}
+    >
+      About Me
+    </h1>
+    <article
+      css={{
+        margin: '.5rem',
+        padding: '10px',
+        border: '1px solid black'
+      }}
+    >
+      <h2
+        css={{
+          fontSize: '1.3rem',
+          borderBottom: '2px groove black'
+        }}
+      >
+        Where I'm from
+      </h2>
+      <p>paragraph</p>
     </article>
-    <article>
-      <h2>subtitle</h2>
-      <p>paragraph about me</p>
+    <article
+      css={{
+        margin: '.5rem',
+        padding: '10px',
+        border: '1px solid black'
+      }}
+    >
+      <h2
+        css={{
+          fontSize: '1.3rem',
+          borderBottom: '2px groove black'
+        }}
+      >
+        What I like
+      </h2>
+      <p>paragraph</p>
     </article>
-    <article>
-      <h2>subtitle</h2>
-      <p>paragraph about me</p>
-    </article>
-    <article>
-      <h2>subtitle</h2>
-      <p>paragraph about me</p>
+    <article
+      css={{
+        margin: '.5rem',
+        padding: '10px',
+        border: '1px solid black'
+      }}
+    >
+      <h2
+        css={{
+          fontSize: '1.3rem',
+          borderBottom: '2px groove black'
+        }}
+      >
+        What I care about
+      </h2>
+      <p>paragraph</p>
     </article>
   </div>
 )
