@@ -16,9 +16,10 @@ const TemplateWrapper = ({ children, data }) => (
       title='Front Page'
     />
     <div
+      className='boards'
       style={{
         margin: '0 auto',
-        width: '100vw',
+        width: '100%',
 
         display: 'flex',
         flexDirection: 'column',
