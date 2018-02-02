@@ -23,52 +23,25 @@ const AboutPage = () => (
     <article
       css={{
         margin: '.5rem',
-        padding: '10px',
-        border: '1px solid black'
+        padding: '10px'
       }}
     >
-      <h2
-        css={{
-          fontSize: '1.3rem',
-          borderBottom: '2px groove black'
-        }}
-      >
-        Where I'm from
-      </h2>
       <p>paragraph</p>
     </article>
     <article
       css={{
         margin: '.5rem',
-        padding: '10px',
-        border: '1px solid black'
+        padding: '10px'
       }}
     >
-      <h2
-        css={{
-          fontSize: '1.3rem',
-          borderBottom: '2px groove black'
-        }}
-      >
-        What I like
-      </h2>
       <p>paragraph</p>
     </article>
     <article
       css={{
         margin: '.5rem',
-        padding: '10px',
-        border: '1px solid black'
+        padding: '10px'
       }}
     >
-      <h2
-        css={{
-          fontSize: '1.3rem',
-          borderBottom: '2px groove black'
-        }}
-      >
-        What I care about
-      </h2>
       <p>paragraph</p>
     </article>
   </div>
