@@ -24,13 +24,13 @@ const Header = ({title}) => (
           listStyleType: 'none'
         }}>
         <li >
-          <NavLink to='/about' title='About Me' />
+          <NavLink to='/about/' title='About Me' />
         </li>
         <li>
-          <NavLink to='/projects' title='Projects' />
+          <NavLink to='/projects/' title='Projects' />
         </li>
         <li>
-          <NavLink to='/blog' title='Blog' />
+          <NavLink to='/blog/' title='Blog' />
         </li>
       </ul>
     </nav>

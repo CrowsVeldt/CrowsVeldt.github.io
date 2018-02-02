@@ -37,9 +37,9 @@ const IndexPage = () => (
         alignItems: 'start'
       }}
     >
-      <Link to='/about'>A Little About Me</Link>
-      <Link to='/projects'>Things I Built</Link>
-      <Link to='/blog'>Things I Wrote</Link>
+      <Link to='/about/'>A Little About Me</Link>
+      <Link to='/projects/'>Things I Built</Link>
+      <Link to='/blog/'>Things I Wrote</Link>
     </div>
   </div>
   )
