@@ -4,7 +4,7 @@ import React from 'react'
 const Header = ({title}) => (
   <header
     css={{
-      height: '4.5rem',
+      height: '3rem',
       display: 'flex',
       justifyContent: 'space-between',
       background: 'black'
