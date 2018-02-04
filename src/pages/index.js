@@ -11,17 +11,7 @@ const IndexPage = () => (
       textAlign: 'center'
     }}
   >
-    <article
-      css={{
-        maxWidth: '540px',
-        fontWeight: 'bold'
-      }}
-    >
-      <p>
-        I've built this site as a place to put all the things I make and write.
-        Take a look and let me know what you think!
-      </p>
-    </article>
+  Blahgs will be here
   </div>
   )
 
