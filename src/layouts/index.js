@@ -26,7 +26,7 @@ const TemplateWrapper = ({ children, data }) => (
         alignItems: 'center',
 
         backgroundImage: `url(${boards})`,
-        backgroundRepeat: 'round'
+        backgroundRepeat: 'repeat'
       }}
     >
       <div
@@ -44,6 +44,20 @@ const TemplateWrapper = ({ children, data }) => (
           boxShadow: '0px 11px 10px black'
         }}
       >
+        <h1
+          css={{
+            position: 'absolute',
+            left: '11vw',
+            top: '3.2rem',
+            fontSize: '1.7rem',
+            width: '9rem',
+            borderBottom: '2px groove black',
+            borderRight: '2px groove black',
+            textAlign: 'center'
+          }}
+        >
+          This Thing I Did
+        </h1>
         {children()}
       </div>
     </div>

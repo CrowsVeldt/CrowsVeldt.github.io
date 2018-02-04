@@ -6,11 +6,10 @@ const Header = ({title}) => (
     css={{
       height: '3rem',
       display: 'flex',
-      justifyContent: 'space-between',
+      justifyContent: 'end',
       background: 'black'
     }}
   >
-    <NavLink to='/' title={title} />
     <nav
       css={{
         alignSelf: 'stretch'
@@ -30,7 +29,7 @@ const Header = ({title}) => (
           <NavLink to='/projects/' title='Projects' />
         </li>
         <li>
-          <NavLink to='/blog/' title='Blog' />
+          <NavLink to='/' title='Blog' />
         </li>
       </ul>
     </nav>
