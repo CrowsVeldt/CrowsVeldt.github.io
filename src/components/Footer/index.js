@@ -3,8 +3,9 @@ import React from 'react'
 const Footer = ({title}) => (
   <footer
     css={{
-      minHeight: '2.5rem',
+      height: '2.5rem',
       padding: '0.5rem 0.5rem',
+      fontSize: '0.9rem',
 
       display: 'flex',
       justifyContent: 'space-between',
@@ -22,7 +23,6 @@ const Footer = ({title}) => (
       css={{
         display: 'flex',
         '@media(max-width: 520px)': {
-          marginRight: '1rem',
           flexDirection: 'column'
         }
       }}
@@ -36,7 +36,6 @@ const Footer = ({title}) => (
       >GitHub</a>
       <a
         css={{
-          marginRight: '1rem',
           color: 'white'
         }}
         href='https://www.linkedin.com/in/zechariah-webdeveloper/'
