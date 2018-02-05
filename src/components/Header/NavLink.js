@@ -4,7 +4,7 @@ import React from 'react'
 const NavLink = ({title, to}) => (
   <span
     css={{
-      height: '3rem',
+      height: '2.5rem',
 
       display: 'flex',
 
@@ -22,7 +22,7 @@ const NavLink = ({title, to}) => (
       css={{
         paddingRight: '1rem',
         paddingLeft: '1rem',
-        paddingTop: 'calc(50% - 1rem)',
+        paddingTop: 'calc(50% - .75rem)',
         height: '100%',
 
         display: 'block',

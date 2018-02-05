@@ -26,10 +26,12 @@ const IndexPage = ({ data }) => {
 
                 }}
               >
-                <h1>
-                  <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
-                </h1>
-                <h2>{post.frontmatter.date}</h2>
+                <h2>
+                  <Link to={post.frontmatter.path}>
+                    {post.frontmatter.title}
+                  </Link>
+                </h2>
+                <p>{post.frontmatter.date}</p>
                 <p>{post.excerpt}</p>
               </div>)
           })
