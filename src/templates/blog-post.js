@@ -8,6 +8,7 @@ export default function Template ({ data }) {
       <Helmet title={`This Thing I Did - ${post.frontmatter.title}`} />
       <div className='blog-post'>
         <h1>{post.frontmatter.title}</h1>
+        <p>{post.frontmatter.date}</p>
         <div
           className='blog-post-content'
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -22,7 +23,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: 'MMM DD, YYYY')
+        date(formatString: "MMM DD, YYYY")
         path
         title
       }

@@ -4,13 +4,13 @@
   "version": "0.0.1",
   "author": "Zechariah Mahler",
   "dependencies": {
-    "gatsby": "^1.9.175",
+    "gatsby": "^1.9.179",
     "gatsby-cli": "^1.1.34",
-    "gatsby-link": "^1.6.35",
+    "gatsby-link": "^1.6.36",
     "gatsby-plugin-catch-links": "^1.0.15",
     "gatsby-plugin-glamor": "^1.6.11",
     "gatsby-plugin-react-helmet": "^2.0.4",
-    "gatsby-source-filesystem": "^1.5.16",
+    "gatsby-source-filesystem": "^1.5.17",
     "gatsby-transformer-remark": "^1.7.30",
     "react-helmet": "^5.2.0"
   },

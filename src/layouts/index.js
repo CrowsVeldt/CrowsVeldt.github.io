@@ -1,4 +1,5 @@
 import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
 import React from 'react'
 
@@ -44,20 +45,23 @@ const TemplateWrapper = ({ children, data }) => (
           boxShadow: '0px 11px 10px black'
         }}
       >
-        <h1
-          css={{
-            position: 'absolute',
-            left: '11vw',
-            top: '3.2rem',
-            fontSize: '1.7rem',
-            width: '9rem',
-            borderBottom: '2px groove black',
-            borderRight: '2px groove black',
-            textAlign: 'center'
-          }}
-        >
-          This Thing I Did
-        </h1>
+        <Link to='/'>
+          <h1
+            css={{
+              position: 'absolute',
+              left: '11vw',
+              top: '3.2rem',
+              color: 'black',
+              fontSize: '1.7rem',
+              width: '9rem',
+              borderBottom: '2px groove black',
+              borderRight: '2px groove black',
+              textAlign: 'center'
+            }}
+          >
+            This Thing I Did
+          </h1>
+        </Link>
         {children()}
       </div>
     </div>

@@ -10,11 +10,7 @@ const Header = ({title}) => (
       background: 'black'
     }}
   >
-    <nav
-      css={{
-        alignSelf: 'stretch'
-      }}
-    >
+    <nav>
       <ul
         css={{
           display: 'flex',
@@ -27,9 +23,6 @@ const Header = ({title}) => (
         </li>
         <li>
           <NavLink to='/projects/' title='Projects' />
-        </li>
-        <li>
-          <NavLink to='/' title='Blog' />
         </li>
       </ul>
     </nav>
