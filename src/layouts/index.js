@@ -45,29 +45,6 @@ const TemplateWrapper = ({ children, data }) => (
           boxShadow: '0px 11px 10px black'
         }}
       >
-        <Link to='/'>
-          <p
-            css={{
-              position: 'absolute',
-              left: '0.3rem',
-              top: '0.3rem',
-              padding: '4px',
-              color: 'black',
-              fontSize: '1.7rem',
-              fontWeight: 'bold',
-              width: '9rem',
-              borderBottom: '2px groove black',
-              borderRight: '2px groove black',
-              textAlign: 'center',
-
-              ':active': {
-                border: '2px solid black'
-              }
-            }}
-          >
-            This Thing I Did
-          </p>
-        </Link>
         {children()}
       </div>
     </div>
