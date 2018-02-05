@@ -38,8 +38,8 @@ const TemplateWrapper = ({ children, data }) => (
           flexDirection: 'column',
           alignItems: 'center',
 
-          backgroundColor: '#dddddd',
-          boxShadow: '0px 11px 10px black'
+          backgroundColor: '#dddddd'
+          // boxShadow: '0px 11px 10px black'
         }}
       >
         {children()}

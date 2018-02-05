@@ -10,8 +10,8 @@ const Footer = ({title}) => (
       display: 'flex',
       justifyContent: 'space-between',
 
-      background: 'black',
-      color: 'white'
+      background: '#cccccc',
+      color: 'black'
 
     }}
   >
@@ -30,13 +30,13 @@ const Footer = ({title}) => (
       <a
         css={{
           marginRight: '1rem',
-          color: 'white'
+          color: 'black'
         }}
         href='https://github.com/CrowsVeldt'
       >GitHub</a>
       <a
         css={{
-          color: 'white'
+          color: 'black'
         }}
         href='https://www.linkedin.com/in/zechariah-webdeveloper/'
       >LinkedIn</a>
