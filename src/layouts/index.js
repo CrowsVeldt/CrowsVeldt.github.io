@@ -32,7 +32,7 @@ const TemplateWrapper = ({ children, data }) => (
         css={{
           margin: 0,
           width: '80vw',
-          minHeight: 'calc(100vh - 5rem)',
+          minHeight: 'calc(100vh - 6.5rem)',
 
           display: 'flex',
           flexDirection: 'column',
