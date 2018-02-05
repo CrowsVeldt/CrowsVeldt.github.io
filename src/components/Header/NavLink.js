@@ -4,16 +4,16 @@ import React from 'react'
 const NavLink = ({title, to}) => (
   <span
     css={{
-      height: '2.5rem',
+      height: '4rem',
 
       display: 'flex',
 
-      background: 'black',
+      background: '#cccccc',
       ':hover': {
-        background: 'green'
+        background: '#bbbbbb'
       },
       ':active': {
-        background: 'darkgreen'
+        background: '#aaaaaa'
       }
     }}
   >
@@ -27,7 +27,7 @@ const NavLink = ({title, to}) => (
 
         display: 'block',
 
-        color: 'white',
+        color: 'black',
         textDecoration: 'none'
       }}
     >

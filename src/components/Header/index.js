@@ -4,10 +4,10 @@ import React from 'react'
 const Header = ({title}) => (
   <header
     css={{
-      height: '2.5rem',
+      height: '4rem',
       display: 'flex',
       justifyContent: 'end',
-      background: 'black'
+      background: '#cccccc'
     }}
   >
     <nav>
@@ -15,7 +15,6 @@ const Header = ({title}) => (
         css={{
           display: 'flex',
           flexDirection: 'row',
-
           listStyleType: 'none'
         }}>
         <li >
