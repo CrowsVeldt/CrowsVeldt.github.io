@@ -2,7 +2,7 @@ import Link from 'gatsby-link'
 import NavLink from './NavLink'
 import React from 'react'
 
-const Header = ({title}) => (
+const Header = () => (
   <header
     css={{
       height: '4rem',

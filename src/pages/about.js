@@ -18,7 +18,7 @@ const AboutPage = () => (
         borderBottom: '2px groove black'
       }}
     >
-      A Little About Me
+      Who I Am
     </h1>
     <article
       css={{
@@ -26,7 +26,9 @@ const AboutPage = () => (
         padding: '10px'
       }}
     >
-      <p>paragraph</p>
+      <p>
+        I'm a guy with an incessent urge to tell stories and make things.
+      </p>
     </article>
     <article
       css={{
@@ -34,15 +36,11 @@ const AboutPage = () => (
         padding: '10px'
       }}
     >
-      <p>paragraph</p>
-    </article>
-    <article
-      css={{
-        margin: '.5rem',
-        padding: '10px'
-      }}
-    >
-      <p>paragraph</p>
+      <p>
+        I care more than is good for me about equality, justice,
+        the environment, and various other enormous issues that I'll
+        almost certainly never be able to have a significant impact on.
+      </p>
     </article>
   </div>
 )
