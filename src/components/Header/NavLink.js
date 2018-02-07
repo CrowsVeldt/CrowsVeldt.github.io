@@ -22,7 +22,7 @@ const NavLink = ({title, to}) => (
         paddingRight: '0.5rem',
         paddingLeft: '0.5rem',
         paddingTop: 'calc(50% - .75rem)',
-        height: '100%',
+        height: '64px',
 
         display: 'block',
 

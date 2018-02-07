@@ -1,11 +1,9 @@
 import NavLink from './NavLink'
 import React from 'react'
 
-const MenuButton = ({onClick}) => (
+const MenuButton = () => (
   <button 
-    onClick={onClick}
     css={{
-      backgroundColor: '#cccccc',
       color: 'black',
       fontSize: '18px',
       border: 'none',
@@ -68,9 +66,10 @@ export default class NavMenu extends React.Component {
             display: 'none'
           }
         }}
+        onClick={this.toggleMenu}
       >
-        <MenuButton onClick={this.toggleMenu} />
-        <NavList show={this.state.visible}/>
+        <MenuButton />
+        <NavList show={this.state.visible} />
 
       </nav>
     )
