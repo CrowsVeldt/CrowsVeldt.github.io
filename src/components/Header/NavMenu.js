@@ -53,6 +53,24 @@ export default class NavMenu extends React.Component {
     visible: !this.state.visible
   })
 
+  closeMenu = (e) => {
+    if (this.state.visible && !this.node.contains(e.target)) {
+      this.setState ({
+        visible: false
+      })
+    }
+  }
+
+  
+  componentWillMount = () => {
+    document.body.addEventListener('click', this.closeMenu)
+  }
+
+  componentWillUnmount = () => {
+    document.body.removeEventListener('click', this.closeMenu)
+  }
+  
+
   render () {
     return (
       <nav
@@ -65,7 +83,9 @@ export default class NavMenu extends React.Component {
           '@media(min-width: 401px)': {
             display: 'none'
           }
+
         }}
+        ref={node => this.node = node}
         onClick={this.toggleMenu}
       >
         <MenuButton />
