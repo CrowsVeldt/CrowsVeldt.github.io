@@ -5,7 +5,6 @@ const NavLink = ({title, to}) => (
   <span
     css={{
       height: '64px',
-
       display: 'flex',
 
       background: '#cccccc',
@@ -20,14 +19,16 @@ const NavLink = ({title, to}) => (
     <Link
       to={to}
       css={{
-        paddingRight: '1rem',
+        paddingRight: '0.5rem',
+        paddingLeft: '0.5rem',
         paddingTop: 'calc(50% - .75rem)',
         height: '100%',
 
         display: 'block',
 
         color: 'black',
-        textAlign: 'center',
+        fontSize: '18px',
+        fontStyle: 'bold',
         textDecoration: 'none'
       }}
     >

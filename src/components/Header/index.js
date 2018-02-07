@@ -1,5 +1,6 @@
-import Link from 'gatsby-link'
+import Logo from './Logo'
 import NavLink from './NavLink'
+import NavMenu from './NavMenu'
 import React from 'react'
 
 const Header = () => (
@@ -11,34 +12,15 @@ const Header = () => (
       background: '#cccccc'
     }}
   >
-    <Link to='/'
+    <Logo />
+    <nav
+      className='larger-screen'
       css={{
-        margin: '4px',
-        marginRight: '0px',
-        padding: '4px',
-        minWidth: '150px',
-        maxWidth: '150px',
-
-        color: 'hsla(0, 0%, 0%, .9)',
-        // fontSize: '1.7rem',
-        fontSize: '27px',
-        // width: '9rem',
-        fontWeight: 'bold',
-        textAlign: 'center',
-        textDecoration: 'none',
-        lineHeight: '24px',
-
-        borderBottom: '2px groove black',
-        borderRight: '2px groove black',
-
-        ':active': {
-          border: '2px solid black'
+        '@media(max-width: 400px)': {
+          display: 'none'
         }
       }}
-      >
-        This Thing I Did
-    </Link>
-    <nav>
+    >
       <ul
         css={{
           display: 'flex',
@@ -53,6 +35,8 @@ const Header = () => (
         </li>
       </ul>
     </nav>
+
+    <NavMenu />
   </header>
 )
 

@@ -39,7 +39,6 @@ const TemplateWrapper = ({ children, data }) => (
           alignItems: 'center',
 
           backgroundColor: '#dddddd'
-          // boxShadow: '0px 11px 10px black'
         }}
       >
         {children()}
