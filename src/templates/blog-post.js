@@ -15,7 +15,7 @@ export default function Template ({ data }) {
         textAlign: 'center'
       }}
       >
-      <Helmet title={`This Thing I Did - ${post.frontmatter.title}`} />
+      <Helmet title={`TTID - ${post.frontmatter.title}`} />
       <div className='blog-post'>
         <h1
           css={{
