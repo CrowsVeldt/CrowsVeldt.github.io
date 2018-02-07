@@ -7,13 +7,22 @@ const IndexPage = ({ data }) => {
     <div
       className='blog-posts'
       css={{
-        padding: '5rem 2rem 3rem 2rem',
+        padding: '3rem 2rem 3rem 2rem',
         maxWidth: '60vw',
         display: 'flex',
         flexDirection: 'column',
         textAlign: 'center'
       }}
     >
+      <h1
+        css={{
+          fontSize: '2rem',
+          marginBottom: '3rem',
+          borderBottom: '2px groove black'
+        }}
+      >
+        What I Wrote
+      </h1>
       {
         posts
           .filter(post => post.node.frontmatter.title.length > 0)
@@ -23,15 +32,33 @@ const IndexPage = ({ data }) => {
                 className='blog-post-preview'
                 key={post.id}
                 css={{
-
+                  padding: '1rem',
+                  borderTop: '2px groove black',
+                  borderBottom: '2px groove black'
                 }}
               >
-                <h2>
-                  <Link to={post.frontmatter.path}>
+                <h2
+
+                >
+                  <Link
+                    css={{
+                      color: 'hsla(0, 0%, 0%, .8) ',
+                      textDecoration: 'none',
+
+                      ':hover': {
+                        textDecoration: 'underline'
+                      }
+                    }}
+                    to={post.frontmatter.path}
+                  >
                     {post.frontmatter.title}
                   </Link>
                 </h2>
-                <p>{post.frontmatter.date}</p>
+                <p
+                  css={{
+                    fontStyle: 'italic'
+                  }}
+                >{post.frontmatter.date}</p>
                 <p>{post.excerpt}</p>
               </div>)
           })
