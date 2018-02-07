@@ -3,7 +3,6 @@ import React from 'react'
 const Footer = ({title}) => (
   <footer
     css={{
-      height: '45px',
       padding: '0.5rem 0.5rem',
       fontSize: '0.9rem',
 
@@ -11,23 +10,36 @@ const Footer = ({title}) => (
       justifyContent: 'space-between',
 
       background: '#cccccc',
-      color: 'black',
-      '@media(max-width: 520px)': {
-        height: '90px'
-      }
+      color: 'black'
     }}
   >
-    <p>
-        Copyright © Zechariah Mahler (2018)
-    </p>
+    <div
+      css={{
+        display: 'flex',
+        flexDirection: 'column',
+        textAlign: 'center'
+      }}
+    >
+      <p
+        css={{
+          margin: 0
+        }}
+      >
+          Copyright ©
+      </p>
+      <p
+        css={{
+          margin: 0
+        }}
+      >
+          Zechariah Mahler (2018)
+      </p>
+    </div>
     <div
       className='socialLinks'
       css={{
         display: 'flex',
-        '@media(max-width: 520px)': {
-          flexDirection: 'column',
-          justifyContent: 'space-around'
-        }
+        alignItems: 'center'
       }}
     >
       <a
