@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => {
           borderBottom: '2px groove black'
         }}
       >
-        What I Wrote
+        Things I Wrote
       </h1>
       {
         posts

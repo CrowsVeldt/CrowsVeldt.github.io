@@ -15,7 +15,7 @@ const Header = () => (
       css={{
         margin: '4px',
         padding: '4px',
-        color: 'black',
+        color: 'hsla(0, 0%, 0%, .9)',
         fontSize: '1.7rem',
         fontWeight: 'bold',
         width: '9rem',
