@@ -26,7 +26,7 @@ const Footer = ({title}) => (
         display: 'flex',
         '@media(max-width: 520px)': {
           flexDirection: 'column',
-          justifyContent: 'space-between'
+          justifyContent: 'space-around'
         }
       }}
     >
