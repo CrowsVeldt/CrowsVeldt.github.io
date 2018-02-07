@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = ({title}) => (
+const Footer = () => (
   <footer
     css={{
       padding: '0.5rem 0.5rem',
