@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = ({title}) => (
   <footer
     css={{
-      height: '2.5rem',
+      height: '45px',
       padding: '0.5rem 0.5rem',
       fontSize: '0.9rem',
 
@@ -11,8 +11,10 @@ const Footer = ({title}) => (
       justifyContent: 'space-between',
 
       background: '#cccccc',
-      color: 'black'
-
+      color: 'black',
+      '@media(max-width: 520px)': {
+        height: '90px'
+      }
     }}
   >
     <p>
@@ -23,7 +25,8 @@ const Footer = ({title}) => (
       css={{
         display: 'flex',
         '@media(max-width: 520px)': {
-          flexDirection: 'column'
+          flexDirection: 'column',
+          justifyContent: 'space-between'
         }
       }}
     >
