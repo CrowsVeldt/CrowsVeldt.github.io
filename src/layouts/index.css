@@ -330,7 +330,7 @@ hgroup {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-ul {
+/* ul {
   margin-left: 1.45rem;
   margin-right: 0;
   margin-top: 0;
@@ -341,7 +341,7 @@ ul {
   margin-bottom: 1.45rem;
   list-style-position: outside;
   list-style-image: none;
-}
+} */
 ol {
   margin-left: 1.45rem;
   margin-right: 0;
@@ -510,15 +510,15 @@ dt {
 th {
   font-weight: bold;
 }
-li {
+/* li {
   margin-bottom: calc(1.45rem / 2);
-}
+} */
 ol li {
   padding-left: 0;
 }
-ul li {
+/* ul li {
   padding-left: 0;
-}
+} */
 li > ol {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);

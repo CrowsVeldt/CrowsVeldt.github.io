@@ -29,7 +29,8 @@ const MenuButton = () => (
 const NavList = ({show}) => (
   <ul
     css={{
-      listStyleType: 'none',
+      margin: 0,
+      listStyle: 'none',
       display: show ? 'flex' : 'none',
       flexDirection: 'column'
     }}

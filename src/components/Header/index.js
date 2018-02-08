@@ -23,9 +23,10 @@ const Header = () => (
     >
       <ul
         css={{
+          margin: 0,
           display: 'flex',
           flexDirection: 'row',
-          listStyleType: 'none'
+          listStyle: 'none'
         }}>
         <li >
           <NavLink to='/about/' title='About Me' />
