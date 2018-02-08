@@ -63,7 +63,7 @@ export default class NavMenu extends React.Component {
   }
 
   
-  componentWillMount = () => {
+  componentDidMount = () => {
     document.body.addEventListener('click', this.closeMenu)
   }
 
