@@ -1,10 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-export const BlogPostTemplate = ({ postData }) => {
+// TODO: fill this out
+
+export const ProjectTemplate = ({ projectData }) => {
   return (
     <div
-      className='blog-post-container'
+      className='project-container'
       css={{
         padding: '3rem 2rem 3rem 2rem',
         maxWidth: '60vh',
@@ -14,23 +16,22 @@ export const BlogPostTemplate = ({ postData }) => {
         textAlign: 'center'
       }}
         >
-      <Helmet title={`TTID - ${postData.frontmatter.title}`} />
-      <div className='blog-post'>
+      <Helmet title={`TTID - ${projectData.frontmatter.title}`} />
+      <div className='project'>
         <h1
           css={{
             fontSize: '2rem',
             borderBottom: '2px groove black'
           }}
         >
-          {postData.frontmatter.title}
+          {projectData.frontmatter.title}
         </h1>
-        <p>{postData.frontmatter.date}</p>
         <div
-          className='blog-post-content'
-          dangerouslySetInnerHTML={{ __html: postData.html }}
+          className='project-content'
+          dangerouslySetInnerHTML={{ __html: projectData.html }}
           />
       </div>
     </div>
   )
 }
-export default BlogPostTemplate
+export default ProjectTemplate
