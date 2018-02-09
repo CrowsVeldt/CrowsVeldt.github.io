@@ -10,8 +10,7 @@ export const ProjectTemplate = ({ projectData }) => {
         maxWidth: '60vh',
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center',
-        textAlign: 'center'
+        alignItems: 'center'
       }}
         >
       <Helmet title={`TTID - ${projectData.frontmatter.title}`} />
@@ -19,7 +18,8 @@ export const ProjectTemplate = ({ projectData }) => {
         <h1
           css={{
             fontSize: '2rem',
-            borderBottom: '2px groove black'
+            borderBottom: '2px groove black',
+            textAlign: 'center'
           }}
         >
           {projectData.frontmatter.title}
