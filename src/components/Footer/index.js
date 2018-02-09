@@ -45,13 +45,25 @@ const Footer = () => (
       <a
         css={{
           marginRight: '1rem',
-          color: 'black'
+          color: 'black',
+          ':visited': {
+            color: 'purple'
+          },
+          ':hover': {
+            color: 'blue'
+          }
         }}
         href='https://github.com/CrowsVeldt'
       >GitHub</a>
       <a
         css={{
-          color: 'black'
+          color: 'black',
+          ':visited': {
+            color: 'purple'
+          },
+          ':hover': {
+            color: 'blue'
+          }
         }}
         href='https://www.linkedin.com/in/zechariah-webdeveloper/'
       >LinkedIn</a>

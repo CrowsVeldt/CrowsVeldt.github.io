@@ -37,14 +37,14 @@ const IndexPage = ({ data }) => {
                   borderBottom: '2px groove black'
                 }}
               >
-                <h2
-
-                >
+                <h2>
                   <Link
                     css={{
                       color: 'hsla(0, 0%, 0%, .8) ',
                       textDecoration: 'none',
-
+                      ':visited': {
+                        color: 'purple'
+                      },
                       ':hover': {
                         textDecoration: 'underline'
                       }
@@ -58,7 +58,9 @@ const IndexPage = ({ data }) => {
                   css={{
                     fontStyle: 'italic'
                   }}
-                >{post.frontmatter.date}</p>
+                >
+                  {post.frontmatter.date}
+                </p>
                 <p>{post.excerpt}</p>
               </div>)
           })
