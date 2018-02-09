@@ -38,7 +38,7 @@ const ProjectPage = ({ data }) => {
                 </p>
                 <a href={post.frontmatter.projectUrl}>Check it out here!</a>
                 <img src='placeholder@nono.com' alt={'image of ' + post.frontmatter.title} />
-                <p>Tools I used: {post.frontmatter.tools.join(' ')}</p>
+                <p>{`Tools I used: ${post.frontmatter.tools.join(' ')}`}</p>
               </div>
             )
           })

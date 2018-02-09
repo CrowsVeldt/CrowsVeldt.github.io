@@ -24,10 +24,13 @@ export const query = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMM DD, YYYY")
         path
-        title
         type
+        title
+        date(formatString: "MMM DD, YYYY")
+        firstCommit
+        lastCommit
+        projectUrl
         imgUrl
         tools
       }

@@ -24,6 +24,13 @@ export const ProjectTemplate = ({ projectData }) => {
         >
           {projectData.frontmatter.title}
         </h1>
+        <p>
+          first commit: {projectData.frontmatter.firstCommit},
+          last commit: {projectData.frontmatter.lastCommit}
+        </p>
+        <a href={projectData.frontmatter.projectUrl}>Check it out here!</a>
+        <img src={projectData.frontmatter.imgUrl} alt={`Image: ${projectData.frontmatter.title}`} />
+        <p>Tools I used: {projectData.frontmatter.tools.join(', ')}</p>
         <div
           className='project-content'
           dangerouslySetInnerHTML={{ __html: projectData.html }}

@@ -9,5 +9,12 @@ imgUrl: 'test.url'
 tools: ['air', 'fluff']
 ---
 
-The summary and descriptions will be grabbed automatically by markdownRemark
-from this text. So that's no problem.
+###Overview: 
+
+###Goals:
+
+###Plan: 
+
+###Difficulties, and how I dealt with them:
+
+###Takeaways:
