@@ -24,7 +24,8 @@ const TemplateWrapper = ({ children, data }) => (
         alignItems: 'center',
 
         backgroundImage: `url(${boards})`,
-        backgroundRepeat: 'repeat'
+        backgroundRepeat: 'repeat',
+        backgroundColor: 'tan'
       }}
     >
       <div
