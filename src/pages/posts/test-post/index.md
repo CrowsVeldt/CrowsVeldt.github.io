@@ -3,7 +3,7 @@ path: '/blog/test'
 type: 'post'
 title: 'Test Post'
 date: '2017-07-12T17:12:33.962Z'
-tags: ''
+tags: ['test', 'test2']
 ---
 
 First test post

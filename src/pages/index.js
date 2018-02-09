@@ -61,6 +61,7 @@ const IndexPage = ({ data }) => {
                 >
                   {post.frontmatter.date}
                 </p>
+                <p>{`tags: ${post.frontmatter.tags.join(', ')}`}</p>
                 <p>{post.excerpt}</p>
               </div>)
           })
@@ -85,6 +86,7 @@ export const query = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             path
+            tags
           }
         }
       }

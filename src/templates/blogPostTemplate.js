@@ -25,6 +25,7 @@ export const BlogPostTemplate = ({ postData }) => {
           {postData.frontmatter.title}
         </h1>
         <p>{postData.frontmatter.date}</p>
+        <p>{`tags: ${postData.frontmatter.tags.join(', ')}`}</p>
         <div
           className='blog-post-content'
           dangerouslySetInnerHTML={{ __html: postData.html }}
