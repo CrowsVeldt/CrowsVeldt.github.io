@@ -1,8 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-// TODO: fill this out
-
 export const ProjectTemplate = ({ projectData }) => {
   return (
     <div
