@@ -1,11 +1,11 @@
-import BlogPostTemplate from './blog-post'
-import ProjectTemplate from './project'
+import BlogPostTemplate from './blogPostTemplate'
+import ProjectTemplate from './projectTemplate'
 import React from 'react'
 
 export default function Template ({ data }) {
   const { markdownRemark: post } = data
   // I want a different template for 'Blog' and 'Project' pages
-  // So far I haven't found a better way of doing that
+  // this is the best way I've found so far
   switch (post.frontmatter.type) {
     case 'post':
       return <BlogPostTemplate postData={post} />

@@ -1,8 +1,9 @@
 ---
-path: '/test'
-date: '2017-07-12T17:12:33.962Z'
-title: 'Test Post'
+path: '/blog/test'
 type: 'post'
+title: 'Test Post'
+date: '2017-07-12T17:12:33.962Z'
+tags: ''
 ---
 
 First test post

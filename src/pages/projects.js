@@ -8,8 +8,8 @@ const ProjectPage = () => (
       maxWidth: '60vh',
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center'
-      // textAlign: 'center'
+      alignItems: 'center',
+      textAlign: 'center'
     }}
   >
     <h1
