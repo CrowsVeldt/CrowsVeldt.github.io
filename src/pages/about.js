@@ -26,23 +26,11 @@ const AboutPage = () => (
       }}
     >
       <p>
-        Hi! My name is Zechariah Mahler (Just call me Zack). I'm just a guy
-        who's always had an urge to <em>make</em> things.
-        I honestly spent most of my life so scared of criticism that I avoided
-        doing anything creative, but I'm tired of that. So I'm putting this out
-        there, and damn the consequences.
-
-      </p>
-      <p>
-        I'm teaching myself Front-end Web development. I started investigating
-        this career just because I wanted a better job, but to my great good
-        fortune: I found out I actually enjoy it!
-      </p>
-      <p>
-       Besides creating things; I also want to make an actual difference in the
-       world. That's the goal I am going to be working towards as I make my way,
-       in the tech industry and in life. So I'm going to write about things
-       that may seem irrelevent to the web, or high-tech in general.
+        Hi! My name is Zechariah Mahler (you can call me Zack).
+        I'm currently learning Front-end Web development, I've been at it seriously for
+        about a year now, although life has gotten in the way more than once.
+        I'm building this site so I have one place to put all the stuff I make,
+        feel free to take a look and tell me what you think!
       </p>
     </article>
   </div>

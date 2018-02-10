@@ -7,7 +7,7 @@ export const BlogPostTemplate = ({ postData }) => {
       className='blog-post-container'
       css={{
         padding: '3rem 2rem 3rem 2rem',
-        maxWidth: '60vh',
+        maxWidth: '60vw',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center'
@@ -24,10 +24,26 @@ export const BlogPostTemplate = ({ postData }) => {
         >
           {postData.frontmatter.title}
         </h1>
-        <p>{postData.frontmatter.date}</p>
-        <p>{`tags: ${postData.frontmatter.tags.join(', ')}`}</p>
+        <p
+          css={{
+            textAlign: 'center'
+          }}
+        >
+          {postData.frontmatter.date}
+        </p>
+        <p
+          css={{
+            fontStyle: 'italic',
+            textAlign: 'center'
+          }}
+        >
+          {`tags: ${postData.frontmatter.tags.join(', ')}`}
+        </p>
         <div
           className='blog-post-content'
+          css={{
+            maxWidth: '60vh'
+          }}
           dangerouslySetInnerHTML={{ __html: postData.html }}
           />
       </div>

@@ -54,14 +54,16 @@ const IndexPage = ({ data }) => {
                     {post.frontmatter.title}
                   </Link>
                 </h2>
+                <p >
+                  {post.frontmatter.date}
+                </p>
                 <p
                   css={{
                     fontStyle: 'italic'
                   }}
                 >
-                  {post.frontmatter.date}
+                  {`tags: ${post.frontmatter.tags.join(', ')}`}
                 </p>
-                <p>{`tags: ${post.frontmatter.tags.join(', ')}`}</p>
                 <p>{post.excerpt}</p>
               </div>)
           })
