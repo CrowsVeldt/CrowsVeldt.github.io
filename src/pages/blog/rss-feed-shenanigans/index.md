@@ -78,15 +78,13 @@ Checking the associated commit got me the exact solution to my problem:
 +  }
 +}
 ``` 
+(The pull request is currently still waiting for someone with write access to merge it. Hopefully that won't take too long. )
 
 I liked it, I tried it, and it worked! (confetti falls from the sky, people spontaneously bursting into song and dance)
 
-
-The pull request is currently still waiting for someone with write access to merge it. Hopefully that won't take too long. 
-
+You can check out [the RSS feed here.](https://thisthingidid.surge.sh/rss.xml) 
 Thanks for reading! Constructive criticism is welcome.
 
 ## One last bit of fun:
 
-I typed the solution into my ```gatsby-node.js``` file, I avoid using copy/paste since that has caused me much unneccessary grief in the past, but in this case I caused myself ~30 minutes of uneccessary grief by typing
-```markdownRemark``` instead of ```MarkdownRemark```(!) So, yeah. That was fun.
+I try to avoid copy/pasting solutions since that has caused me much unneccessary grief in the past, but in this case I caused myself ~30 minutes of uneccessary grief by typing ```markdownRemark``` instead of ```MarkdownRemark```(!) So, yeah. That was fun.
