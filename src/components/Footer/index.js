@@ -12,7 +12,7 @@ const Footer = () => (
       background: '#cccccc',
       color: 'black',
 
-      '@media(max-width: 401px)': {
+      '@media(max-width: 441px)': {
         flexDirection: 'column',
         alignItems: 'center'
       }
@@ -23,7 +23,7 @@ const Footer = () => (
         display: 'flex',
         flexDirection: 'row',
 
-        '@media(max-width: 401px)': {
+        '@media(max-width: 441px)': {
           flexDirection: 'column',
           alignItems: 'center'
         }
