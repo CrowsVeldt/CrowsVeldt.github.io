@@ -10,19 +10,30 @@ const Footer = () => (
       justifyContent: 'space-between',
 
       background: '#cccccc',
-      color: 'black'
+      color: 'black',
+
+      '@media(max-width: 401px)': {
+        flexDirection: 'column',
+        alignItems: 'center'
+      }
     }}
   >
     <div
       css={{
         display: 'flex',
-        flexDirection: 'column',
-        textAlign: 'center'
+        flexDirection: 'row',
+
+        '@media(max-width: 401px)': {
+          flexDirection: 'column',
+          alignItems: 'center'
+        }
       }}
     >
       <p
         css={{
-          margin: 0
+          margin: 0,
+          marginRight: '0.4rem'
+
         }}
       >
           Copyright ©
@@ -36,7 +47,7 @@ const Footer = () => (
       </p>
     </div>
     <div
-      className='socialLinks'
+      className='footerLinks'
       css={{
         display: 'flex',
         alignItems: 'center'
@@ -53,8 +64,25 @@ const Footer = () => (
             color: 'blue'
           }
         }}
+        href='https://thisthingidid.surge.sh/rss.xml'
+      >
+        RSS
+      </a>
+      <a
+        css={{
+          marginRight: '1rem',
+          color: 'black',
+          ':visited': {
+            color: 'purple'
+          },
+          ':hover': {
+            color: 'blue'
+          }
+        }}
         href='https://github.com/CrowsVeldt'
-      >GitHub</a>
+      >
+        GitHub
+      </a>
       <a
         css={{
           color: 'black',
@@ -66,7 +94,9 @@ const Footer = () => (
           }
         }}
         href='https://www.linkedin.com/in/zechariah-webdeveloper/'
-      >LinkedIn</a>
+      >
+        LinkedIn
+      </a>
     </div>
   </footer>
 )
