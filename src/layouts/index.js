@@ -33,9 +33,6 @@ const TemplateWrapper = ({ children, data }) => (
       <div
         className='page-contents-container'
         css={{
-          margin: 0,
-          width: '80vw',
-          minHeight: 'calc(100vh - 109px)',
 
           display: 'flex',
           flexDirection: 'column',
@@ -43,8 +40,12 @@ const TemplateWrapper = ({ children, data }) => (
 
           backgroundColor: '#dddddd',
 
+          width: '80vw',
+          minHeight: 'calc(100vh - 64px - 44.1px)',
+
           '@media(max-width: 400px)': {
-            width: '100%'
+            width: '100%',
+            minHeight: 'calc(100vh - 64px - 86.6px)'
           }
 
         }}
