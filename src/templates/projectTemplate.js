@@ -11,7 +11,7 @@ export const ProjectTemplate = ({ projectData }) => {
         maxWidth: '800px',
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center'
+        textAlign: 'center'
       }}
     >
       <Helmet title={`TTID - ${projectData.frontmatter.title}`} />
@@ -32,6 +32,9 @@ export const ProjectTemplate = ({ projectData }) => {
       <p>Tools I used: {projectData.frontmatter.tools.join(', ')}</p>
       <div
         className='project-content'
+        css={{
+          textAlign: 'start'
+        }}
         dangerouslySetInnerHTML={{ __html: projectData.html }}
         />
     </div>

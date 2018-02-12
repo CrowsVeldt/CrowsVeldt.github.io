@@ -9,7 +9,7 @@ const AboutPage = () => (
       maxWidth: '800px',
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center'
+      textAlign: 'center'
     }}
   >
     <h1
@@ -19,7 +19,11 @@ const AboutPage = () => (
     >
       Who I Am
     </h1>
-    <article>
+    <article
+      css={{
+        textAlign: 'start'
+      }}
+    >
       <p>
         Hi! My name is Zechariah Mahler (you can call me Zack).
         I'm currently learning Front-end Web development, I've been at it seriously for

@@ -12,7 +12,6 @@ const ProjectPage = ({ data }) => {
         maxWidth: '800px',
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center',
         textAlign: 'center'
       }}
     >
@@ -28,7 +27,13 @@ const ProjectPage = ({ data }) => {
           .filter(post => post.node.frontmatter.title.length > 0)
           .map(({ node: post }) => {
             return (
-              <div>
+              <div
+                css={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  borderBottom: '2px groove black'
+                }}
+              >
                 <Link to={post.frontmatter.path}>
                   <h2>{post.frontmatter.title}</h2>
                 </Link>

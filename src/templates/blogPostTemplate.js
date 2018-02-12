@@ -10,30 +10,24 @@ export const BlogPostTemplate = ({ postData }) => {
         maxWidth: '800px',
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center'
+        textAlign: 'center'
       }}
     >
       <Helmet title={`TTID - ${postData.frontmatter.title}`} />
       <h1
         css={{
           fontSize: '2rem',
-          borderBottom: '2px groove black',
-          textAlign: 'center'
+          borderBottom: '2px groove black'
         }}
       >
         {postData.frontmatter.title}
       </h1>
-      <p
-        css={{
-          textAlign: 'center'
-        }}
-      >
+      <p>
         {postData.frontmatter.date}
       </p>
       <p
         css={{
-          fontStyle: 'italic',
-          textAlign: 'center'
+          fontStyle: 'italic'
         }}
       >
         {`tags: ${postData.frontmatter.tags.join(', ')}`}
@@ -41,7 +35,8 @@ export const BlogPostTemplate = ({ postData }) => {
       <div
         className='blog-post-content'
         css={{
-          width: '100%'
+          width: '100%',
+          textAlign: 'start'
         }}
         dangerouslySetInnerHTML={{ __html: postData.html }}
         />

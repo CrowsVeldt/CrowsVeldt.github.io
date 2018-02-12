@@ -11,13 +11,13 @@ const IndexPage = ({ data }) => {
         width: '100%',
         maxWidth: '800px',
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        textAlign: 'center'
       }}
     >
       <h1
         css={{
-          borderBottom: '2px groove black',
-          textAlign: 'center'
+          borderBottom: '2px groove black'
         }}
       >
         Things I Wrote
@@ -34,11 +34,7 @@ const IndexPage = ({ data }) => {
                   borderBottom: '2px groove black'
                 }}
               >
-                <h2
-                  css={{
-                    textAlign: 'center'
-                  }}
-                >
+                <h2>
                   <Link
                     css={{
                       color: 'hsla(0, 0%, 0%, .8) ',
@@ -55,22 +51,21 @@ const IndexPage = ({ data }) => {
                     {post.frontmatter.title}
                   </Link>
                 </h2>
-                <p
-                  css={{
-                    textAlign: 'center'
-                  }}
-                >
+                <p>
                   {post.frontmatter.date}
                 </p>
                 <p
                   css={{
-                    fontStyle: 'italic',
-                    textAlign: 'center'
+                    fontStyle: 'italic'
                   }}
                 >
                   {`tags: ${post.frontmatter.tags.join(', ')}`}
                 </p>
-                <p>{post.excerpt}</p>
+                <p
+                  css={{
+                    textAlign: 'start'
+                  }}
+                >{post.excerpt}</p>
               </div>)
           })
       }
