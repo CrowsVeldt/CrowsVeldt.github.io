@@ -23,9 +23,11 @@ const TemplateWrapper = ({ children, data }) => (
         flexDirection: 'column',
         alignItems: 'center',
 
-        backgroundImage: `url(${boards})`,
-        backgroundRepeat: 'repeat',
-        backgroundColor: 'tan'
+        '@media(min-width: 400px)': {
+          backgroundImage: `url(${boards})`,
+          backgroundRepeat: 'repeat',
+          backgroundColor: 'tan'
+        }
       }}
     >
       <div
@@ -39,7 +41,12 @@ const TemplateWrapper = ({ children, data }) => (
           flexDirection: 'column',
           alignItems: 'center',
 
-          backgroundColor: '#dddddd'
+          backgroundColor: '#dddddd',
+
+          '@media(max-width: 400px)': {
+            width: '100%'
+          }
+
         }}
       >
         {children()}

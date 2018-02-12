@@ -5,7 +5,7 @@ export const BlogPostTemplate = ({ postData }) => {
   return (
     <div className='blog-post'
       css={{
-        padding: '3rem 2rem 3rem 2rem',
+        padding: '3rem 1rem 3rem 1rem',
         width: '100%',
         maxWidth: '800px',
         display: 'flex',
