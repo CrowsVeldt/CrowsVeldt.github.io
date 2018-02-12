@@ -42,7 +42,13 @@ const ProjectPage = ({ data }) => {
                   last commit: {post.frontmatter.lastCommit}
                 </p>
                 <a href={post.frontmatter.projectUrl}>Check it out here!</a>
-                <img src='placeholder@nono.com' alt={'image of ' + post.frontmatter.title} />
+                <img
+                  src='placeholder@nono.com'
+                  alt={'image of ' + post.frontmatter.title}
+                  css={{
+                    alignSelf: 'center'
+                  }}
+                />
                 <p>{`Tools I used: ${post.frontmatter.tools.join(' ')}`}</p>
               </div>
             )
