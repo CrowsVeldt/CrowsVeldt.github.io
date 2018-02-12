@@ -8,6 +8,7 @@ const MenuButton = () => (
       fontSize: '18px',
       border: 'none',
       minHeight: '64px',
+      width: '100px',
 
       paddingRight: '1rem',
       paddingLeft: '1rem',
@@ -30,12 +31,13 @@ const NavList = ({show}) => (
   <ul
     css={{
       margin: 0,
+      padding: 0,
       listStyle: 'none',
       display: show ? 'flex' : 'none',
       flexDirection: 'column'
     }}
   >
-    <li >
+    <li>
       <NavLink to='/about/' title='About Me' />
     </li>
     <li>
@@ -78,7 +80,6 @@ export default class NavMenu extends React.Component {
         css={{
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'end',
           zIndex: 1,
 
           '@media(min-width: 401px)': {

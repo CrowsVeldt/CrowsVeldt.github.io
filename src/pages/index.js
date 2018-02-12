@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
           borderBottom: '2px groove black'
         }}
       >
-        Things I Wrote
+        Blog
       </h1>
       {
         posts

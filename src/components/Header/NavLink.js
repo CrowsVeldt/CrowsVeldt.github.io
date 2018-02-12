@@ -6,6 +6,7 @@ const NavLink = ({title, to}) => (
     css={{
       height: '64px',
       display: 'flex',
+      justifyContent: 'center',
 
       background: '#cccccc',
       ':hover': {
@@ -21,7 +22,6 @@ const NavLink = ({title, to}) => (
       css={{
         paddingRight: '0.5rem',
         paddingLeft: '0.5rem',
-        paddingTop: 'calc(50% - .75rem)',
         height: '64px',
 
         display: 'block',
@@ -29,7 +29,9 @@ const NavLink = ({title, to}) => (
         color: 'black',
         fontSize: '18px',
         fontStyle: 'bold',
-        textDecoration: 'none'
+        textDecoration: 'none',
+        lineHeight: '64px'
+
       }}
     >
       {title}

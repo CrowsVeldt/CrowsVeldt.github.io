@@ -20,7 +20,7 @@ const ProjectPage = ({ data }) => {
           borderBottom: '2px groove black'
         }}
       >
-        Things I Built
+        Projects
       </h1>
       {
         posts
