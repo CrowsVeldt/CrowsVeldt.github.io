@@ -7,7 +7,8 @@ export const ProjectTemplate = ({ projectData }) => {
       className='project-container'
       css={{
         padding: '3rem 2rem 3rem 2rem',
-        maxWidth: '60vh',
+        width: '100%',
+        maxWidth: '800px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center'
@@ -17,7 +18,6 @@ export const ProjectTemplate = ({ projectData }) => {
       <div className='project'>
         <h1
           css={{
-            fontSize: '2rem',
             borderBottom: '2px groove black',
             textAlign: 'center'
           }}

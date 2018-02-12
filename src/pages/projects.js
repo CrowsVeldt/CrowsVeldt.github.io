@@ -5,10 +5,11 @@ const ProjectPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
   return (
     <div
-      className='page-container'
+      className='project-page'
       css={{
         padding: '3rem 2rem 3rem 2rem',
-        maxWidth: '60vh',
+        width: '100%',
+        maxWidth: '800px',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -17,7 +18,6 @@ const ProjectPage = ({ data }) => {
     >
       <h1
         css={{
-          fontSize: '2rem',
           borderBottom: '2px groove black'
         }}
       >

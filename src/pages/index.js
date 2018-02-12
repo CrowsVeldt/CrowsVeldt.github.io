@@ -8,17 +8,16 @@ const IndexPage = ({ data }) => {
       className='blog-posts'
       css={{
         padding: '3rem 2rem 3rem 2rem',
-        maxWidth: '60vw',
+        width: '100%',
+        maxWidth: '800px',
         display: 'flex',
-        flexDirection: 'column',
-        textAlign: 'center'
+        flexDirection: 'column'
       }}
     >
       <h1
         css={{
-          fontSize: '2rem',
-          marginBottom: '3rem',
-          borderBottom: '2px groove black'
+          borderBottom: '2px groove black',
+          textAlign: 'center'
         }}
       >
         Things I Wrote
@@ -32,12 +31,14 @@ const IndexPage = ({ data }) => {
                 className='blog-post-preview'
                 key={post.id}
                 css={{
-                  padding: '1rem',
-                  borderTop: '2px groove black',
                   borderBottom: '2px groove black'
                 }}
               >
-                <h2>
+                <h2
+                  css={{
+                    textAlign: 'center'
+                  }}
+                >
                   <Link
                     css={{
                       color: 'hsla(0, 0%, 0%, .8) ',
@@ -54,12 +55,17 @@ const IndexPage = ({ data }) => {
                     {post.frontmatter.title}
                   </Link>
                 </h2>
-                <p >
+                <p
+                  css={{
+                    textAlign: 'center'
+                  }}
+                >
                   {post.frontmatter.date}
                 </p>
                 <p
                   css={{
-                    fontStyle: 'italic'
+                    fontStyle: 'italic',
+                    textAlign: 'center'
                   }}
                 >
                   {`tags: ${post.frontmatter.tags.join(', ')}`}

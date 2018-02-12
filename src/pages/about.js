@@ -2,10 +2,11 @@ import React from 'react'
 
 const AboutPage = () => (
   <div
-    className='page-container'
+    className='about-page'
     css={{
       padding: '3rem 2rem 3rem 2rem',
-      maxWidth: '60vh',
+      width: '100%',
+      maxWidth: '800px',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center'
@@ -13,18 +14,12 @@ const AboutPage = () => (
   >
     <h1
       css={{
-        fontSize: '2rem',
         borderBottom: '2px groove black'
       }}
     >
       Who I Am
     </h1>
-    <article
-      css={{
-        margin: '.5rem',
-        padding: '10px'
-      }}
-    >
+    <article>
       <p>
         Hi! My name is Zechariah Mahler (you can call me Zack).
         I'm currently learning Front-end Web development, I've been at it seriously for
