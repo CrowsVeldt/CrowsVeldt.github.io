@@ -34,14 +34,18 @@ const ProjectPage = ({ data }) => {
                   borderBottom: '2px groove black'
                 }}
               >
-                <Link to={post.frontmatter.path}>
-                  <h2>{post.frontmatter.title}</h2>
-                </Link>
+                <h2>
+                  <Link to={post.frontmatter.path}>
+                    {post.frontmatter.title}
+                  </Link>
+                </h2>
                 <p>
                   first commit: {post.frontmatter.firstCommit},
                   last commit: {post.frontmatter.lastCommit}
                 </p>
-                <a href={post.frontmatter.projectUrl}>Check it out here!</a>
+                <a href={post.frontmatter.projectUrl}>
+                  Check it out here!
+                </a>
                 <img
                   src='placeholder@nono.com'
                   alt={'image of ' + post.frontmatter.title}

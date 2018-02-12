@@ -10,7 +10,6 @@ const Logo = () => (
       minWidth: '150px',
       maxWidth: '150px',
 
-      color: 'hsla(0, 0%, 0%, .9)',
       fontSize: '27px',
       fontWeight: 'bold',
       textAlign: 'center',
@@ -22,6 +21,12 @@ const Logo = () => (
 
       ':active': {
         border: '2px solid black'
+      },
+      ':hover': {
+        color: 'black'
+      },
+      ':visited': {
+        color: 'black'
       }
     }}
   >

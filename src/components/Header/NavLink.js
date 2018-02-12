@@ -30,7 +30,11 @@ const NavLink = ({title, to}) => (
         fontSize: '18px',
         fontStyle: 'bold',
         textDecoration: 'none',
-        lineHeight: '64px'
+        lineHeight: '64px',
+
+        ':visited': {
+          color: 'black'
+        }
 
       }}
     >

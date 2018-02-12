@@ -35,19 +35,7 @@ const IndexPage = ({ data }) => {
                 }}
               >
                 <h2>
-                  <Link
-                    css={{
-                      color: 'hsla(0, 0%, 0%, .8) ',
-                      textDecoration: 'none',
-                      ':visited': {
-                        color: 'purple'
-                      },
-                      ':hover': {
-                        textDecoration: 'underline'
-                      }
-                    }}
-                    to={post.frontmatter.path}
-                  >
+                  <Link to={post.frontmatter.path}>
                     {post.frontmatter.title}
                   </Link>
                 </h2>

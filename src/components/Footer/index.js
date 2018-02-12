@@ -54,14 +54,14 @@ const Footer = () => (
     >
       <a
         css={{
-          marginRight: '1rem',
-          color: 'black',
-          ':visited': {
-            color: 'purple'
-          },
-          ':hover': {
-            color: 'blue'
-          }
+          marginRight: '1rem'
+          // color: 'black',
+          // ':visited': {
+          //   color: 'purple'
+          // },
+          // ':hover': {
+          //   color: 'blue'
+          // }
         }}
         href='https://thisthingidid.surge.sh/rss.xml'
       >
@@ -69,29 +69,29 @@ const Footer = () => (
       </a>
       <a
         css={{
-          marginRight: '1rem',
-          color: 'black',
-          ':visited': {
-            color: 'purple'
-          },
-          ':hover': {
-            color: 'blue'
-          }
+          marginRight: '1rem'
+          // color: 'black',
+          // ':visited': {
+          //   color: 'purple'
+          // },
+          // ':hover': {
+          //   color: 'blue'
+          // }
         }}
         href='https://github.com/CrowsVeldt'
       >
         GitHub
       </a>
       <a
-        css={{
-          color: 'black',
-          ':visited': {
-            color: 'purple'
-          },
-          ':hover': {
-            color: 'blue'
-          }
-        }}
+        // css={{
+        //   color: 'black',
+        //   ':visited': {
+        //     color: 'purple'
+        //   },
+        //   ':hover': {
+        //     color: 'blue'
+        //   }
+        // }}
         href='https://www.linkedin.com/in/zechariah-webdeveloper/'
       >
         LinkedIn
