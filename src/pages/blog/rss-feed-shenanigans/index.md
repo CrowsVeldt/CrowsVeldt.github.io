@@ -82,9 +82,15 @@ Checking the associated commit got me the exact solution to my problem:
 
 I liked it, I tried it, and it worked! (confetti falls from the sky, people spontaneously bursting into song and dance)
 
-You can check out [the RSS feed here.](https://thisthingidid.surge.sh/rss.xml) 
-Thanks for reading! Constructive criticism is welcome.
+## The Moral of the Story:
+
+Documentation is all well and good, but sometimes digging into the source code itself (and the issues page) really is the way to go. Especially when the project is still in the early stage. 
+
+I know this is like saying "water is wet" to more experienced programmers, but before now I felt intimidated by it and let that dissuade me. Now that I'm over that first bump I hope it'll be easier from now on. 
 
 ## One last bit of fun:
 
 I try to avoid copy/pasting solutions since that has caused me much unneccessary grief in the past, but in this case I caused myself ~30 minutes of uneccessary grief by typing ```markdownRemark``` instead of ```MarkdownRemark```(!) So, yeah. That was fun.
+
+You can check out [my RSS feed here.](https://thisthingidid.surge.sh/rss.xml) 
+Thanks for reading! Feel free to let me know what you think.

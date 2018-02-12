@@ -21,7 +21,6 @@ const Footer = () => (
     <div
       css={{
         display: 'flex',
-        flexDirection: 'row',
 
         '@media(max-width: 441px)': {
           flexDirection: 'column',
