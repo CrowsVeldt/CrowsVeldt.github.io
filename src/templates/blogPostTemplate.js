@@ -42,7 +42,7 @@ export const BlogPostTemplate = ({ postData }) => {
         <div
           className='blog-post-content'
           css={{
-            maxWidth: '60vh'
+            maxWidth: '60vw'
           }}
           dangerouslySetInnerHTML={{ __html: postData.html }}
           />
