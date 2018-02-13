@@ -46,7 +46,7 @@ const ProjectPage = ({ data }) => {
                 </p>
                 <a href={post.frontmatter.projectUrl}>
                   <img
-                    src={/* how to do this? */ null}
+                    src={imageurl}
                     alt={'image of ' + post.frontmatter.title}
                     css={{
                       alignSelf: 'center'
@@ -75,14 +75,14 @@ export const query = graphql`
           excerpt(pruneLength: 250)
           id
           frontmatter {
-            path
-            type
-            title
             firstCommit
+            img
             lastCommit
+            path
             projectUrl
-            imgUrl
+            title
             tools
+            type
           }
         }
       }
