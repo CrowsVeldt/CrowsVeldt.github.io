@@ -46,7 +46,7 @@ const ProjectPage = ({ data }) => {
                 </p>
                 <a href={post.frontmatter.projectUrl}>
                   <img
-                    src={imageurl}
+                    src={/* imageurl */ null}
                     alt={'image of ' + post.frontmatter.title}
                     css={{
                       alignSelf: 'center'
