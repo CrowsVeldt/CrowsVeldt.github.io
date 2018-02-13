@@ -28,6 +28,7 @@ const ProjectPage = ({ data }) => {
           .map(({ node: post }) => {
             return (
               <div
+                key={post.id}
                 css={{
                   display: 'flex',
                   flexDirection: 'column',
@@ -44,16 +45,15 @@ const ProjectPage = ({ data }) => {
                   last commit: {post.frontmatter.lastCommit}
                 </p>
                 <a href={post.frontmatter.projectUrl}>
-                  Check it out here!
+                  <img
+                    src={/* how to do this? */ null}
+                    alt={'image of ' + post.frontmatter.title}
+                    css={{
+                      alignSelf: 'center'
+                    }}
+                  />
                 </a>
-                <img
-                  src='placeholder@nono.com'
-                  alt={'image of ' + post.frontmatter.title}
-                  css={{
-                    alignSelf: 'center'
-                  }}
-                />
-                <p>{`Tools I used: ${post.frontmatter.tools.join(' ')}`}</p>
+                <p>{`Tools I used: ${post.frontmatter.tools.join(', ')}`}</p>
               </div>
             )
           })

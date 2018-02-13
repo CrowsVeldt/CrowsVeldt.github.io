@@ -19,6 +19,19 @@ module.exports = {
         name: 'pages'
       }
     },
-    'gatsby-transformer-remark'
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-plugin-sharp',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 700
+            }
+          }
+        ]
+      }
+    }
   ]
 }

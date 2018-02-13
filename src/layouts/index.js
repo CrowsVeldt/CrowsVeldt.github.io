@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import './index.css'
-import boards from '../res/boards.jpg'
+import boards from '../res/images/boards.jpg'
 import Footer from '../components/Footer/index'
 import Header from '../components/Header/index'
 
