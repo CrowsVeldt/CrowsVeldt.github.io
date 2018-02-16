@@ -1,9 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-
 import Link from 'gatsby-link'
+import React from 'react'
 
-const tags = ({ pathContext, data}) => {
+const tags = ({ pathContext, data }) => {
   const { tag } = pathContext
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tag}"`
@@ -13,7 +11,7 @@ const tags = ({ pathContext, data}) => {
       <h1>{tagHeader}</h1>
       <ul>
         {edges.map(({ node }) => {
-          const { path, title } = node.frontMatter
+          const { path, title } = node.frontmatter
           return (
             <li key={path}>
               <Link to={path}>{title}</Link>
@@ -24,27 +22,6 @@ const tags = ({ pathContext, data}) => {
       <Link to='/tags'>All tags</Link>
     </div>
   )
-}
-
-tags.propTypes = {
-  pathContext: PropTypes.shape({
-    tag: PropTypes.string.isRequired
-  }),
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      totalCount: PropTypes.number.isRequired,
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            frontMatter: PropTypes.shape({
-              path: PropTypes.string.isRequired,
-              title: PropTypes.string.isRequired
-            })
-          })
-        }).isRequired
-      )
-    })
-  })
 }
 
 export default tags

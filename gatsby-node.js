@@ -19,16 +19,18 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
 
   const PostTemplate = path.resolve(`src/templates/post.js`)
+  const tagTemplate = path.resolve(`src/templates/tags.js`)
 
   return graphql(`{
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 1000
+      limit: 2000
     ) {
       edges {
         node {
           frontmatter {
             path
+            tags
           }
         }
       }
@@ -38,11 +40,33 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         return Promise.reject(result.errors)
       }
 
-      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      const posts = result.data.allMarkdownRemark.edges
+
+      posts.forEach(({ node }) => {
         createPage({
           path: node.frontmatter.path,
           component: PostTemplate,
           context: {}
+        })
+      })
+
+      let tags = []
+
+      posts.forEach(edge => {
+        if (edge.node.frontmatter.tags) {
+          tags = tags.concat(edge.node.frontmatter.tags)
+        }
+      })
+
+      tags = [...new Set(tags)]
+
+      tags.forEach(tag => {
+        createPage({
+          path: `/tags/${tag}/`,
+          component: tagTemplate,
+          context: {
+            tag
+          }
         })
       })
     })
