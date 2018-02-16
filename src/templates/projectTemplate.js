@@ -28,7 +28,7 @@ export const ProjectTemplate = ({ projectData }) => {
         last commit: {projectData.frontmatter.lastCommit}
       </p>
       <a href={projectData.frontmatter.projectUrl}>Check it out here!</a>
-      <img src={projectData.frontmatter.img} alt={`Image: ${projectData.frontmatter.title}`} />
+      {/* <img src={projectData.frontmatter.img} alt={`Image: ${projectData.frontmatter.title}`} /> */}
       <p>Tools I used: {projectData.frontmatter.tools.join(', ')}</p>
       <div
         className='project-content'
