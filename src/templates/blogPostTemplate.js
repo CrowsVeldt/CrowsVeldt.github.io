@@ -23,14 +23,10 @@ export const BlogPostTemplate = ({ postData }) => {
         {postData.frontmatter.title}
       </h1>
       <p>
-        {postData.frontmatter.date}
+        Published: {postData.frontmatter.date}
       </p>
-      <p
-        css={{
-          fontStyle: 'italic'
-        }}
-      >
-        {`tags: ${postData.frontmatter.tags.join(', ')}`}
+      <p>
+        {`Tags: ${postData.frontmatter.tags.join(', ')}`}
       </p>
       <div
         className='blog-post-content'

@@ -40,14 +40,10 @@ const IndexPage = ({ data }) => {
                   </Link>
                 </h2>
                 <p>
-                  {post.frontmatter.date}
+                  Published: {post.frontmatter.date}
                 </p>
-                <p
-                  css={{
-                    fontStyle: 'italic'
-                  }}
-                >
-                  {`tags: ${post.frontmatter.tags.join(', ')}`}
+                <p>
+                  {`Tags: ${post.frontmatter.tags.join(', ')}`}
                 </p>
                 <p
                   css={{
