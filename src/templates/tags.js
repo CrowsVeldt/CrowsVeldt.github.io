@@ -7,9 +7,26 @@ const tags = ({ pathContext, data }) => {
   const tagHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tag}"`
 
   return (
-    <div>
-      <h1>{tagHeader}</h1>
-      <ul>
+    <div
+      css={{
+        display: 'flex',
+        flexDirection: 'column',
+        padding: '3rem 1rem 3rem 1rem'
+      }}
+    >
+      <h1
+        css={{
+          fontSize: '1.8rem',
+          borderBottom: '2px groove black'
+        }}
+      >
+        {tagHeader}
+      </h1>
+      <ul
+        css={{
+          alignSelf: 'center'
+        }}
+      >
         {edges.map(({ node }) => {
           const { path, title } = node.frontmatter
           return (

@@ -15,12 +15,12 @@ const TagsPage = ({ data: { allMarkdownRemark: { group } } }) => (
     <div
       css={{
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        textAlign: 'center'
       }}
     >
       <h1
         css={{
-          textAlign: 'center',
           borderBottom: '2px groove black'
         }}
       >
@@ -28,7 +28,8 @@ const TagsPage = ({ data: { allMarkdownRemark: { group } } }) => (
       </h1>
       <ul
         css={{
-          alignSelf: 'center'
+          alignSelf: 'center',
+          textAlign: 'start'
         }}
       >
         {group.map(tag => (
