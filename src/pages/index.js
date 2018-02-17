@@ -22,6 +22,21 @@ const IndexPage = ({ data }) => {
       >
         Blog
       </h1>
+      <div
+        className='sidebar'
+        css={{
+          height: '64px',
+          width: '10vw',
+          position: 'absolute',
+          right: '0px',
+          top: '64px',
+          backgroundColor: '#ddddddbb'
+        }}
+      >
+        <Link to='/tags/'>
+          Tags
+        </Link>
+      </div>
       {
         posts
           .filter(post => post.node.frontmatter.title.length > 0)
