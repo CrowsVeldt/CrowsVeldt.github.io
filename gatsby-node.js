@@ -48,18 +48,23 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       const projectPosts = []
       let tags = []
 
+      // Funnel each edge to it's container
       posts.forEach((edge) => {
         if (edge.node.frontmatter.type === 'post') {
           blogPosts.push(edge.node)
         } else if (edge.node.frontmatter.type === 'project') {
           projectPosts.push(edge.node)
-        } else if (edge.node.frontmatter.tags) {
+        }
+
+        if (edge.node.frontmatter.tags) {
           tags = tags.concat(edge.node.frontmatter.tags)
         }
       })
 
+      // Remove duplicate tags
       tags = [...new Set(tags)]
 
+      // This is redundant, but it works for now. I should refactor them together.
       blogPosts.forEach((node, index) => {
         const prev = index === 0 ? false : blogPosts[index - 1]
         const next = index === blogPosts.length - 1 ? false : blogPosts[index + 1]
