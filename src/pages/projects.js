@@ -76,7 +76,6 @@ export const query = graphql`
           id
           frontmatter {
             firstCommit
-            img
             lastCommit
             path
             projectUrl

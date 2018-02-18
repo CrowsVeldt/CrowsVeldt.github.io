@@ -27,7 +27,6 @@ export const query = graphql`
       frontmatter {
         date(formatString: "MMM DD, YYYY")
         firstCommit
-        img
         lastCommit
         path
         projectUrl
