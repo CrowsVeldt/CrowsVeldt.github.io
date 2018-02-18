@@ -31,6 +31,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           frontmatter {
             path
             tags
+            type
+            title
           }
         }
       }
@@ -42,23 +44,47 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
       const posts = result.data.allMarkdownRemark.edges
 
-      posts.forEach(({ node }) => {
-        createPage({
-          path: node.frontmatter.path,
-          component: PostTemplate,
-          context: {}
-        })
-      })
-
+      const blogPosts = []
+      const projectPosts = []
       let tags = []
 
-      posts.forEach(edge => {
-        if (edge.node.frontmatter.tags) {
+      posts.forEach((edge) => {
+        if (edge.node.frontmatter.type === 'post') {
+          blogPosts.push(edge.node)
+        } else if (edge.node.frontmatter.type === 'project') {
+          projectPosts.push(edge.node)
+        } else if (edge.node.frontmatter.tags) {
           tags = tags.concat(edge.node.frontmatter.tags)
         }
       })
 
       tags = [...new Set(tags)]
+
+      blogPosts.forEach((node, index) => {
+        const prev = index === 0 ? false : blogPosts[index - 1]
+        const next = index === blogPosts.length - 1 ? false : blogPosts[index + 1]
+        createPage({
+          path: node.frontmatter.path,
+          component: PostTemplate,
+          context: {
+            prev,
+            next
+          }
+        })
+      })
+
+      projectPosts.forEach((node, index) => {
+        const prev = index === 0 ? false : projectPosts[index - 1]
+        const next = index === projectPosts.length - 1 ? false : projectPosts[index + 1]
+        createPage({
+          path: node.frontmatter.path,
+          component: PostTemplate,
+          context: {
+            prev,
+            next
+          }
+        })
+      })
 
       tags.forEach(tag => {
         createPage({

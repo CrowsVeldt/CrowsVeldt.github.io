@@ -2,13 +2,14 @@ import BlogPostTemplate from './blogPostTemplate'
 import ProjectTemplate from './projectTemplate'
 import React from 'react'
 
-export default function Template ({ data }) {
+export default function Template ({ data, pathContext }) {
+  console.log(pathContext)
   const { markdownRemark: post } = data
   // I want a different template for 'Blog' and 'Project' pages
   // this is the best way I've found so far
   switch (post.frontmatter.type) {
     case 'post':
-      return <BlogPostTemplate postData={post} />
+      return <BlogPostTemplate postData={post} context={pathContext} />
     case 'project':
       return <ProjectTemplate projectData={post} />
     default:

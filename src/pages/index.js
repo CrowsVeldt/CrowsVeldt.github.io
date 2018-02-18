@@ -101,10 +101,11 @@ const IndexPage = ({ data }) => {
                       padding: 0
                     }}
                   >
-                    {post.frontmatter.tags.map(tag => {
+                    {post.frontmatter.tags.map((tag, index) => {
                       return (
                         <Link
                           to={`/tags/${tag}/`}
+                          key={index}
                           css={{
                             paddingRight: '0.5rem'
                           }}

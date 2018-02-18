@@ -2,7 +2,12 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import React from 'react'
 
-export const BlogPostTemplate = ({ postData }) => {
+export const BlogPostTemplate = ({ postData, context }) => {
+  const {prev, next} = context
+
+  const previousPost = prev.frontmatter ? prev.frontmatter.path : null
+  const nextPost = next.frontmatter ? next.frontmatter.path : null
+
   return (
     <div className='blog-post'
       css={{
@@ -54,10 +59,11 @@ export const BlogPostTemplate = ({ postData }) => {
             padding: 0
           }}
         >
-          {postData.frontmatter.tags.map(tag => {
+          {postData.frontmatter.tags.map((tag, index) => {
             return (
               <Link
                 to={`/tags/${tag}/`}
+                key={index}
                 css={{
                   paddingRight: '0.5rem'
                 }}
@@ -76,6 +82,26 @@ export const BlogPostTemplate = ({ postData }) => {
         }}
         dangerouslySetInnerHTML={{ __html: postData.html }}
         />
+      <div
+        css={{
+          width: '150px',
+          alignSelf: 'center',
+          display: 'flex',
+          justifyContent: 'space-between'
+
+        }}
+      >
+        {
+          previousPost
+          ? <Link to={previousPost}>{prev.frontmatter.title}</Link>
+          : null
+        }
+        {
+          nextPost
+          ? <Link to={nextPost}>{next.frontmatter.title}</Link>
+          : null
+        }
+      </div>
     </div>
   )
 }
