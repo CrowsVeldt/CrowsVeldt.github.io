@@ -44,6 +44,12 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
       const posts = result.data.allMarkdownRemark.edges
 
+      /*
+        The code here is very redundant, but it's the best way I've found to
+        seperate the Blog and Project pages. I'm sure there are better ways,
+        and I'll refactor this as soon as I find one.
+      */
+
       const blogPosts = []
       const projectPosts = []
       let tags = []
@@ -64,7 +70,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       // Remove duplicate tags
       tags = [...new Set(tags)]
 
-      // This is redundant, but it works for now. I should refactor them together.
       blogPosts.forEach((node, index) => {
         const prev = index === 0 ? false : blogPosts[index - 1]
         const next = index === blogPosts.length - 1 ? false : blogPosts[index + 1]

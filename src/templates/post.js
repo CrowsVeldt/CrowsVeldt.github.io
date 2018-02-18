@@ -21,7 +21,7 @@ export default function Template ({ data, pathContext }) {
 }
 
 export const query = graphql`
-  query BlogPostByPath($path: String!) {
+  query PageByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
