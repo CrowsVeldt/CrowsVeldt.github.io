@@ -79,30 +79,41 @@ const IndexPage = ({ data }) => {
                     display: 'flex',
                     flexDirection: 'row',
                     justifyContent: 'center',
-                    flexWrap: 'wrap'
+                    alignContent: 'center',
+                    marginBottom: '1rem'
                   }}
-                >
+      >
                   <p
                     css={{
                       paddingRight: '0.5rem',
-                      margin: 'auto'
+                      marginTop: 'auto',
+                      marginBottom: 'auto'
                     }}
                   >
                     Tags:
                   </p>
-                  {post.frontmatter.tags.map(tag => {
-                    return (
-                      <Link
-                        to={`/tags/${tag}/`}
-                        css={{
-                          paddingRight: '0.5rem'
-                        }}
-                      >
-                        {tag}
-                      </Link>
-                    )
-                  })
-                  }
+                  <span
+                              css={{
+                      display: 'flex',
+                      flexDirection: 'row',
+                      justifyContent: 'flex-start',
+                      flexWrap: 'wrap',
+                      padding: 0
+                    }}
+                  >
+                              {post.frontmatter.tags.map(tag => {
+                      return (
+                        <Link
+                          to={`/tags/${tag}/`}
+                          css={{
+                            paddingRight: '0.5rem'
+                          }}
+                        >
+                          {tag}
+                        </Link>
+                      )
+                    })}
+                            </span>
                 </div>
                 <p
                   css={{
