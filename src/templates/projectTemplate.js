@@ -1,5 +1,6 @@
-import React from 'react'
 import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
+import React from 'react'
 
 export const ProjectTemplate = ({ data, context }) => {
   const {prev, next} = context
