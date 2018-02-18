@@ -17,7 +17,8 @@ const IndexPage = ({ data }) => {
     >
       <h1
         css={{
-          borderBottom: '2px groove black'
+          borderBottom: '2px groove black',
+          marginBottom: '2rem'
         }}
       >
         Blog
@@ -46,7 +47,8 @@ const IndexPage = ({ data }) => {
                 className='blog-post-preview'
                 key={post.id}
                 css={{
-                  borderBottom: '2px groove black'
+                  borderBottom: '2px groove black',
+                  marginBottom: '2rem'
                 }}
               >
                 <h2>
