@@ -2,7 +2,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import React from 'react'
 
-export const BlogPostTemplate = ({ postData, context }) => {
+export const BlogPostTemplate = ({ data, context }) => {
   const {prev, next} = context
 
   const previousPost = prev.frontmatter ? prev.frontmatter.path : null
@@ -19,17 +19,17 @@ export const BlogPostTemplate = ({ postData, context }) => {
         textAlign: 'center'
       }}
     >
-      <Helmet title={`TTID - ${postData.frontmatter.title}`} />
+      <Helmet title={`TTID - ${data.frontmatter.title}`} />
       <h1
         css={{
           fontSize: '2rem',
           borderBottom: '2px groove black'
         }}
       >
-        {postData.frontmatter.title}
+        {data.frontmatter.title}
       </h1>
       <p>
-        Published: {postData.frontmatter.date}
+        Published: {data.frontmatter.date}
       </p>
       <div
         className='tag-container'
@@ -59,7 +59,7 @@ export const BlogPostTemplate = ({ postData, context }) => {
             padding: 0
           }}
         >
-          {postData.frontmatter.tags.map((tag, index) => {
+          {data.frontmatter.tags.map((tag, index) => {
             return (
               <Link
                 to={`/tags/${tag}/`}
@@ -80,9 +80,10 @@ export const BlogPostTemplate = ({ postData, context }) => {
           width: '100%',
           textAlign: 'start'
         }}
-        dangerouslySetInnerHTML={{ __html: postData.html }}
+        dangerouslySetInnerHTML={{ __html: data.html }}
         />
       <div
+        className='prev-and-next-links'
         css={{
           width: '150px',
           alignSelf: 'center',

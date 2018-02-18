@@ -9,9 +9,9 @@ export default function Template ({ data, pathContext }) {
   // this is the best way I've found so far
   switch (post.frontmatter.type) {
     case 'post':
-      return <BlogPostTemplate postData={post} context={pathContext} />
+      return <BlogPostTemplate data={post} context={pathContext} />
     case 'project':
-      return <ProjectTemplate projectData={post} />
+      return <ProjectTemplate data={post} context={pathContext} />
     default:
       return <p>
                 You shouldn't be seeing this. The dev messed up somehow.
