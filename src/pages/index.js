@@ -18,7 +18,11 @@ const IndexPage = ({ data }) => {
       <h1
         css={{
           borderBottom: '2px groove black',
-          marginBottom: '2rem'
+          marginBottom: '2rem',
+
+          '@media(max-width: 400px)': {
+            marginBottom: '9px'
+          }
         }}
       >
         Blog
@@ -31,7 +35,17 @@ const IndexPage = ({ data }) => {
           position: 'absolute',
           right: '0px',
           top: '64px',
-          backgroundColor: '#ddddddbb'
+          backgroundColor: '#ddddddbb',
+
+          '@media(max-width: 400px)': {
+            height: 'auto',
+            width: 'auto',
+            position: 'relative',
+            left: 'auto',
+            top: 'auto',
+            marginBottom: '2rem'
+
+          }
         }}
       >
         <Link to='/tags/'>
