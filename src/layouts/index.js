@@ -9,9 +9,9 @@ import Header from '../components/Header/index'
 
 const TemplateWrapper = ({ children, data }) => (
   <div>
-    <Helmet
-      title={data.site.siteMetadata.title}
-    />
+    <Helmet title={data.site.siteMetadata.title}>
+      <html lang='en' />
+    </Helmet>
     <Header />
     <div
       className='boards'
