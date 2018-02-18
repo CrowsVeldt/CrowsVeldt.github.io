@@ -82,7 +82,7 @@ const IndexPage = ({ data }) => {
                     alignContent: 'center',
                     marginBottom: '1rem'
                   }}
-      >
+                >
                   <p
                     css={{
                       paddingRight: '0.5rem',
@@ -93,7 +93,7 @@ const IndexPage = ({ data }) => {
                     Tags:
                   </p>
                   <span
-                              css={{
+                    css={{
                       display: 'flex',
                       flexDirection: 'row',
                       justifyContent: 'flex-start',
@@ -101,7 +101,7 @@ const IndexPage = ({ data }) => {
                       padding: 0
                     }}
                   >
-                              {post.frontmatter.tags.map(tag => {
+                    {post.frontmatter.tags.map(tag => {
                       return (
                         <Link
                           to={`/tags/${tag}/`}
@@ -113,7 +113,7 @@ const IndexPage = ({ data }) => {
                         </Link>
                       )
                     })}
-                            </span>
+                  </span>
                 </div>
                 <p
                   css={{
