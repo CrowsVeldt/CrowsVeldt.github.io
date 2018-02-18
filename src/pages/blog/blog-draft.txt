@@ -1,0 +1,14 @@
+---
+path: '/blog-draft'
+type: 'post'
+title: 'Blog Draft'
+date: 'todays date'
+tags: ['blog']
+---
+
+## Title
+
+intro paragraph: ~250 characters
+
+
+content
