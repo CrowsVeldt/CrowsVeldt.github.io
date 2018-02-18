@@ -73,14 +73,45 @@ const IndexPage = ({ data }) => {
                 <p>
                   Published: {post.frontmatter.date}
                 </p>
-                <p>
-                  {`Tags: ${post.frontmatter.tags.join(', ')}`}
-                </p>
+                <div
+                  className='tag-container'
+                  css={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'center',
+                    flexWrap: 'wrap'
+                  }}
+                >
+                  <p
+                    css={{
+                      paddingRight: '0.5rem',
+                      margin: 'auto'
+                    }}
+                  >
+                    Tags:
+                  </p>
+                  {post.frontmatter.tags.map(tag => {
+                    return (
+                      <Link
+                        to={`/tags/${tag}/`}
+                        css={{
+                          paddingRight: '0.5rem'
+                        }}
+                      >
+                        {tag}
+                      </Link>
+                    )
+                  })
+                  }
+                </div>
                 <p
                   css={{
-                    textAlign: 'start'
+                    textAlign: 'start',
+                    marginTop: '5px'
                   }}
-                >{post.excerpt}</p>
+                >
+                  {post.excerpt}
+                </p>
               </div>)
           })
       }
