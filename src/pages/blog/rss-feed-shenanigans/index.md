@@ -1,5 +1,5 @@
 ---
-path: '/rss-feed-shenanigans'
+path: '/blog/rss-feed-shenanigans'
 type: 'post'
 title: 'RSS Feed Shenanigans'
 date: '2018-02-10'

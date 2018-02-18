@@ -1,5 +1,5 @@
 ---
-path: '/blog-draft'
+path: '/blog/blog-draft' //Adding 'blog/' is necessary for gatsby-plugin-feed
 type: 'post'
 title: 'Blog Draft'
 date: 'todays date'

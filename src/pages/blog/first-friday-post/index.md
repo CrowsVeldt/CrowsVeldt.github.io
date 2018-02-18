@@ -1,5 +1,5 @@
 ---
-path: '/first-friday-post'
+path: '/blog/first-friday-post'
 type: 'post'
 title: 'First Friday Post'
 date: '2018-02-17'
