@@ -9,18 +9,32 @@ const PageNavLinks = (props) => (
     css={{
       width: '80vw',
       maxWidth: '800px',
-      justifyContent: 'center',
-      display: 'flex'
+      display: 'grid',
+      gridTemplateColumns: '1fr 1fr 1fr'
     }}
       >
     {
       props.previous
-      ? <Link className='previous' to={props.previous.path}>{props.previous.title}</Link>
+      ? <Link
+        css={{
+          gridColumnStart: '3'
+        }}
+        className='previous'
+        to={props.previous.path}
+        >
+        {props.previous.title}</Link>
       : null
     }
     {
       props.next
-      ? <Link className='next' to={props.next.path}>{props.next.title}</Link>
+      ? <Link
+        css={{
+          gridColumnStart: '1'
+        }}
+        className='next'
+        to={props.next.path}
+        >
+        {props.next.title}</Link>
       : null
     }
   </div>

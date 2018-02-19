@@ -1,7 +1,6 @@
 import ContentContainer from '../components/Page/ContentContainer'
 import PageNavLinks from '../components/Page/PageNavLinks'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 import React from 'react'
 
 export const ProjectTemplate = ({ data, context }) => {
