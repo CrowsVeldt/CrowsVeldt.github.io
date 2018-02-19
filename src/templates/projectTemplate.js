@@ -1,3 +1,4 @@
+import ContentContainer from '../components/ContentContainer'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import React from 'react'
@@ -10,16 +11,7 @@ export const ProjectTemplate = ({ data, context }) => {
 
   return (
 
-    <div className='project'
-      css={{
-        padding: '3rem 1rem 3rem 1rem',
-        width: '100%',
-        maxWidth: '800px',
-        display: 'flex',
-        flexDirection: 'column',
-        textAlign: 'center'
-      }}
-    >
+    <ContentContainer className='project'>
       <Helmet title={`TTID - ${data.frontmatter.title}`} />
       <h1
         css={{
@@ -64,7 +56,7 @@ export const ProjectTemplate = ({ data, context }) => {
           : null
         }
       </div>
-    </div>
+    </ContentContainer>
   )
 }
 export default ProjectTemplate

@@ -1,3 +1,4 @@
+import ContentContainer from '../components/ContentContainer'
 import Link from 'gatsby-link'
 import React from 'react'
 
@@ -7,13 +8,7 @@ const tags = ({ pathContext, data }) => {
   const tagHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tag}"`
 
   return (
-    <div
-      css={{
-        display: 'flex',
-        flexDirection: 'column',
-        padding: '3rem 1rem 3rem 1rem'
-      }}
-    >
+    <ContentContainer className='tag-page'>
       <h1
         css={{
           fontSize: '1.8rem',
@@ -37,7 +32,7 @@ const tags = ({ pathContext, data }) => {
         })}
       </ul>
       <Link to='/tags'>All tags</Link>
-    </div>
+    </ContentContainer>
   )
 }
 

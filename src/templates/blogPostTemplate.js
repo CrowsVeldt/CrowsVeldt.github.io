@@ -1,3 +1,4 @@
+import ContentContainer from '../components/ContentContainer'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import React from 'react'
@@ -9,16 +10,7 @@ export const BlogPostTemplate = ({ data, context }) => {
   const nextPost = next.frontmatter ? next.frontmatter.path : null
 
   return (
-    <div className='blog-post'
-      css={{
-        padding: '3rem 1rem 3rem 1rem',
-        width: '100%',
-        maxWidth: '800px',
-        display: 'flex',
-        flexDirection: 'column',
-        textAlign: 'center'
-      }}
-    >
+    <ContentContainer className='blog-post'>
       <Helmet title={`TTID - ${data.frontmatter.title}`} />
       <h1
         css={{
@@ -103,7 +95,7 @@ export const BlogPostTemplate = ({ data, context }) => {
           : null
         }
       </div>
-    </div>
+    </ContentContainer>
   )
 }
 export default BlogPostTemplate

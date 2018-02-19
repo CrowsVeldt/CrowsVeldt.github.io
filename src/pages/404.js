@@ -1,16 +1,11 @@
+import ContentContainer from '../components/ContentContainer'
 import React from 'react'
 
 const NotFoundPage = () => (
-  <div
-    css={{
-      padding: '3rem 1rem 3rem 1rem',
-      width: '100%',
-      maxWidth: '800px'
-    }}
-  >
+  <ContentContainer>
     <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
+    <p>You just hit a route that doesn&#39;t exist. How did you do that?</p>
+  </ContentContainer>
 )
 
 export default NotFoundPage

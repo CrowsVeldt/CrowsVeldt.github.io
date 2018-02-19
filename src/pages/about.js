@@ -1,17 +1,8 @@
+import ContentContainer from '../components/ContentContainer'
 import React from 'react'
 
 const AboutPage = () => (
-  <div
-    className='about-page'
-    css={{
-      padding: '3rem 1rem 3rem 1rem',
-      width: '100%',
-      maxWidth: '800px',
-      display: 'flex',
-      flexDirection: 'column',
-      textAlign: 'center'
-    }}
-  >
+  <ContentContainer className='about-page'>
     <h1
       css={{
         borderBottom: '2px groove black'
@@ -32,7 +23,7 @@ const AboutPage = () => (
         feel free to take a look and tell me what you think!
       </p>
     </article>
-  </div>
+  </ContentContainer>
 )
 
 export default AboutPage

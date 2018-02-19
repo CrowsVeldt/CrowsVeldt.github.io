@@ -1,20 +1,11 @@
+import ContentContainer from '../components/ContentContainer'
 import Link from 'gatsby-link'
 import React from 'react'
 
 const ProjectPage = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
   return (
-    <div
-      className='project-page'
-      css={{
-        padding: '3rem 1rem 3rem 1rem',
-        width: '100%',
-        maxWidth: '800px',
-        display: 'flex',
-        flexDirection: 'column',
-        textAlign: 'center'
-      }}
-    >
+    <ContentContainer className='project-page'>
       <h1
         css={{
           borderBottom: '2px groove black'
@@ -58,7 +49,7 @@ const ProjectPage = ({ data }) => {
             )
           })
       }
-    </div>
+    </ContentContainer>
   )
 }
 

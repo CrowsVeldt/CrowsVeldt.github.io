@@ -18,8 +18,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
 
-  const PostTemplate = path.resolve(`src/templates/post.js`)
-  const tagTemplate = path.resolve(`src/templates/tags.js`)
+  const PostTemplate = path.resolve(`src/templates/postTemplate.js`)
+  const tagTemplate = path.resolve(`src/templates/tagPageTemplate.js`)
 
   return graphql(`{
     allMarkdownRemark(

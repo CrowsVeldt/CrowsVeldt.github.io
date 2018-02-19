@@ -1,16 +1,10 @@
+import ContentContainer from '../components/ContentContainer'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import React from 'react'
 
 const TagsPage = ({ data: { allMarkdownRemark: { group } } }) => (
-  <div
-    className='tags-container'
-    css={{
-      padding: '3rem 1rem 3rem 1rem',
-      width: '100%',
-      maxWidth: '800px'
-    }}
-  >
+  <ContentContainer className='all-tags'>
     <Helmet title={`TTID - Tags`} />
     <div
       css={{
@@ -41,7 +35,7 @@ const TagsPage = ({ data: { allMarkdownRemark: { group } } }) => (
         ))}
       </ul>
     </div>
-  </div>
+  </ContentContainer>
 )
 
 export default TagsPage
