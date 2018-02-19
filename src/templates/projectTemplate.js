@@ -1,13 +1,12 @@
 import ContentContainer from '../components/Page/ContentContainer'
+import PageNavLinks from '../components/Page/PageNavLinks'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import React from 'react'
 
 export const ProjectTemplate = ({ data, context }) => {
-  const {prev, next} = context
-
-  const previousPost = prev.frontmatter ? prev.frontmatter.path : null
-  const nextPost = next.frontmatter ? next.frontmatter.path : null
+  const previousPage = context.prev.frontmatter
+  const nextPage = context.next.frontmatter
 
   return (
 
@@ -35,27 +34,7 @@ export const ProjectTemplate = ({ data, context }) => {
         }}
         dangerouslySetInnerHTML={{ __html: data.html }}
         />
-      <div
-        className='prev-and-next-links'
-        css={{
-          width: '150px',
-          alignSelf: 'center',
-          display: 'flex',
-          justifyContent: 'space-between'
-
-        }}
-      >
-        {
-          previousPost
-          ? <Link to={previousPost}>{prev.frontmatter.title}</Link>
-          : null
-        }
-        {
-          nextPost
-          ? <Link to={nextPost}>{next.frontmatter.title}</Link>
-          : null
-        }
-      </div>
+      <PageNavLinks previous={previousPage} next={nextPage} />
     </ContentContainer>
   )
 }
