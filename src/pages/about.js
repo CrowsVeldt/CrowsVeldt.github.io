@@ -1,4 +1,4 @@
-import ContentContainer from '../components/ContentContainer'
+import ContentContainer from '../components/Page/ContentContainer'
 import React from 'react'
 
 const AboutPage = () => (

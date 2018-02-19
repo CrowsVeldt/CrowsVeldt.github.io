@@ -1,4 +1,4 @@
-import ContentContainer from '../components/ContentContainer'
+import ContentContainer from '../components/Page/ContentContainer'
 import Link from 'gatsby-link'
 import React from 'react'
 
