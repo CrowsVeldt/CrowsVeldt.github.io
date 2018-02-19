@@ -23,7 +23,7 @@ const TemplateWrapper = ({ children, data }) => (
         flexDirection: 'column',
         alignItems: 'center',
 
-        '@media(min-width: 400px)': {
+        '@media(min-width: 450px)': {
           backgroundImage: `url(${boards})`,
           backgroundRepeat: 'repeat',
           backgroundColor: 'tan'
@@ -43,7 +43,7 @@ const TemplateWrapper = ({ children, data }) => (
           width: '80vw',
           minHeight: 'calc(100vh - 64px - 44.1px)',
 
-          '@media(max-width: 400px)': {
+          '@media(max-width: 450px)': {
             width: '100%',
             minHeight: 'calc(100vh - 64px - 86.6px)'
           }
