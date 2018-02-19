@@ -5,8 +5,8 @@ import Link from 'gatsby-link'
 import React from 'react'
 
 export const BlogPostTemplate = ({ data, context }) => {
-  const previousPage = context.prev.frontmatter
-  const nextPage = context.next.frontmatter
+  const nextPage = context.prev.frontmatter
+  const previousPage = context.next.frontmatter
 
   return (
     <ContentContainer className='blog-post'>
