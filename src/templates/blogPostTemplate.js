@@ -35,7 +35,6 @@ export const BlogPostTemplate = ({ data, context }) => {
       >
         <p
           css={{
-            paddingRight: '0.5rem',
             marginTop: 'auto',
             marginBottom: 'auto'
           }}
@@ -57,7 +56,8 @@ export const BlogPostTemplate = ({ data, context }) => {
                 to={`/tags/${tag}/`}
                 key={index}
                 css={{
-                  paddingRight: '0.5rem'
+                  marginRight: '0.2rem',
+                  marginLeft: '0.2rem'
                 }}
               >
                 {tag}
