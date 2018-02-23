@@ -23,13 +23,12 @@ const Header = () => (
     >
       <ul
         css={{
-          margin: 0,
           display: 'flex',
           flexDirection: 'row',
           listStyle: 'none'
         }}>
         <li >
-          <NavLink to='/about/' title='About Me' />
+          <NavLink to='/about/' title='About' />
         </li>
         <li>
           <NavLink to='/projects/' title='Projects' />

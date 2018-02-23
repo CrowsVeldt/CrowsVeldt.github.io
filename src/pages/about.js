@@ -8,7 +8,7 @@ const AboutPage = () => (
         borderBottom: '2px groove black'
       }}
     >
-      Who I Am
+      About
     </h1>
     <article
       css={{
@@ -16,12 +16,36 @@ const AboutPage = () => (
       }}
     >
       <p>
-        Hi! My name is Zechariah Mahler (you can call me Zack).
-        I'm currently learning Front-end Web development, I've been at it seriously for
-        about a year now, although life has gotten in the way more than once.
-        I'm building this site so I have one place to put all the stuff I make,
-        feel free to take a look and tell me what you think!
+        My name is Zechariah Mahler. All of my life I've had thoughts and
+        opinions, about the things that interest me, sometimes too much for my
+        own good. I frequently thought about starting my own blog or whatever,
+        but never gathered the motivation to do it. Then I started learning
+        Front-end Web development, ever since the idea that I should "start a
+        blog, already!" has been my constant companion. Spoiler Alert: I did.
       </p>
+      <p>
+        This blog Is a place to store all the ideas that have been bouncing
+        around inside my head all this time, on subjects from programming,
+        to politics, mental health.
+      </p>
+      <p>
+        Since this blog will be made up of my thoughts and opinions:
+      </p>
+      <ol>
+        <li>
+          It is not going to be objective, although I will do my best to avoid
+          factual errors.
+        </li>
+        <li>
+          You will see some ideologies being represented more than others,
+          although I do not intend to present my view as the only right and
+          proper one, and:
+       </li>
+        <li>
+          I always try to keep my mind open to change, as such the opinions
+          presented here should also change over time.
+        </li>
+      </ol>
     </article>
   </ContentContainer>
 )
