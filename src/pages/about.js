@@ -22,7 +22,7 @@ const AboutPage = () => (
         but never gathered the motivation to do it. about a year ago I started
         learning Front-end Web development, ever since the idea that I should
         "start a blog, already!" has been my constant companion.
-        **Spoiler Alert**: I did.
+        <em>Spoiler Alertd</em>: I did.
       </p>
       <p>
         This blog is a place to store all the ideas that have been bouncing
