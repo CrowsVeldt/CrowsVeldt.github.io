@@ -40,7 +40,7 @@ const IndexPage = ({ data }) => {
         }}
       >
         <Link to='/tags/'>
-          All Tags
+          Tags
         </Link>
       </div>
       {
