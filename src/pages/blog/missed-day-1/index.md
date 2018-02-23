@@ -1,5 +1,5 @@
 ---
-path: '/blog/missed-day-#1'
+path: '/blog/missed-day-1'
 type: 'post'
 title: 'Missed Day #1 (probably of many)'
 date: '2018-02-23'
