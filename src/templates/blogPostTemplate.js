@@ -1,8 +1,8 @@
 import ContentContainer from '../components/Page/ContentContainer'
 import PageNavLinks from '../components/Page/PageNavLinks'
-import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import React from 'react'
+import Helmet from 'react-helmet'
 
 export const BlogPostTemplate = ({ data, context }) => {
   // Given the order of posts in context prev becomes next and vice versa
@@ -46,8 +46,7 @@ export const BlogPostTemplate = ({ data, context }) => {
             display: 'flex',
             flexDirection: 'row',
             justifyContent: 'flex-start',
-            flexWrap: 'wrap',
-            padding: 0
+            flexWrap: 'wrap'
           }}
         >
           {data.frontmatter.tags.map((tag, index) => {
