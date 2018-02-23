@@ -18,13 +18,14 @@ const AboutPage = () => (
       <p>
         My name is Zechariah Mahler. All of my life I've had thoughts and
         opinions, about the things that interest me, sometimes too much for my
-        own good. I frequently thought about starting my own blog or whatever,
-        but never gathered the motivation to do it. Then I started learning
-        Front-end Web development, ever since the idea that I should "start a
-        blog, already!" has been my constant companion. Spoiler Alert: I did.
+        own good. I frequently thought about starting my own blog,
+        but never gathered the motivation to do it. about a year ago I started
+        learning Front-end Web development, ever since the idea that I should
+        "start a blog, already!" has been my constant companion.
+        **Spoiler Alert**: I did.
       </p>
       <p>
-        This blog Is a place to store all the ideas that have been bouncing
+        This blog is a place to store all the ideas that have been bouncing
         around inside my head all this time, on subjects from programming,
         to politics, mental health.
       </p>
