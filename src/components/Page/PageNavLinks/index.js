@@ -2,6 +2,7 @@ import Link from 'gatsby-link'
 import React from 'react'
 
 const PageNavLinks = (props) => (
+  // if previous AND next don't exist return null
   (!props.previous && !props.next)
   ? null
   : <div
@@ -14,28 +15,28 @@ const PageNavLinks = (props) => (
     }}
       >
     {
-      props.previous
-      ? <Link
+      props.previous &&
+      <Link
         css={{
           gridColumnStart: '1'
         }}
         className='previous'
         to={props.previous.path}
         >
-        {`Previous: ${props.previous.title}`}</Link>
-      : null
+        {`Previous: ${props.previous.title}`}
+      </Link>
     }
     {
-      props.next
-      ? <Link
+      props.next &&
+      <Link
         css={{
           gridColumnStart: '3'
         }}
         className='next'
         to={props.next.path}
         >
-        {`Next: ${props.next.title}`}</Link>
-      : null
+        {`Next: ${props.next.title}`}
+      </Link>
     }
   </div>
 )

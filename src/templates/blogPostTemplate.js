@@ -5,6 +5,7 @@ import Link from 'gatsby-link'
 import React from 'react'
 
 export const BlogPostTemplate = ({ data, context }) => {
+  // Given the order of posts in context prev becomes next and vice versa
   const nextPage = context.prev.frontmatter
   const previousPage = context.next.frontmatter
 

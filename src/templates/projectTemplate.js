@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import React from 'react'
 
 export const ProjectTemplate = ({ data, context }) => {
+  // Given the order of posts in context prev becomes next and vice versa
   const nextPage = context.prev.frontmatter
   const previousPage = context.next.frontmatter
 
