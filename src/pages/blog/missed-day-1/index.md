@@ -3,7 +3,7 @@ path: '/blog/missed-day-1'
 type: 'post'
 title: 'Missed Day #1 (probably of many)'
 date: '2018-02-23'
-tags: ['missed!', 'sharing']
+tags: ['missed', 'sharing']
 ---
 
 I had an idea for a great post at the beginning of the week, but a family crisis
