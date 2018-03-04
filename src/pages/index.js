@@ -8,6 +8,13 @@ const IndexPage = ({ data }) => {
     <ContentContainer className='blog-posts'>
       <h1
         css={{
+          borderBottom: '2px groove black'
+        }}
+      >
+        This Thing I Did
+      </h1>
+      <p
+        css={{
           borderBottom: '2px groove black',
           marginBottom: '2rem',
 
@@ -16,8 +23,8 @@ const IndexPage = ({ data }) => {
           }
         }}
       >
-        Blog
-      </h1>
+        A place to put my musings and ramblings
+      </p>
       <div
         className='sidebar'
         css={{
