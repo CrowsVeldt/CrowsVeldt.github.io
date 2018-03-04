@@ -5,11 +5,10 @@ const ContentContainer = ({ children }) => (
     className='content-container'
     css={{
       padding: '3rem 1rem 3rem 1rem',
-      width: '100%',
       maxWidth: '800px',
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'center',
+      alignItems: 'center',
       textAlign: 'center'
     }}
    >

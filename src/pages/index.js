@@ -8,7 +8,9 @@ const IndexPage = ({ data }) => {
     <ContentContainer className='blog-posts'>
       <h1
         css={{
-          borderBottom: '2px groove black'
+          borderBottom: '2px groove black',
+          borderRight: '2px groove black',
+          width: '182px'
         }}
       >
         This Thing I Did
@@ -23,7 +25,9 @@ const IndexPage = ({ data }) => {
           }
         }}
       >
-        A place to put my musings and ramblings
+        Hi! My name is Zechariah. I'm learning programming, and can't seem to
+        stop thinking about things. So I decided to kill two birds with one
+        stone and built this blog as place to put my musings and ramblings.
       </p>
       <div
         className='sidebar'
