@@ -5,6 +5,7 @@ const { createFilePath } = require('gatsby-source-filesystem')
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators
 
+  // Make 'slug' for all posts
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({node, getNode})
     createNodeField({
@@ -31,7 +32,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           frontmatter {
             path
             tags
-            type
             title
           }
         }
@@ -43,25 +43,19 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       }
 
       const posts = result.data.allMarkdownRemark.edges
-
-      /*
-        The code here is very redundant, but it's the best way I've found to
-        seperate the Blog and Project pages. I'm sure there are better ways,
-        and I'll refactor this as soon as I find one.
-      */
-
-      const blogPosts = []
-      const projectPosts = []
       let tags = []
 
-      // Funnel each edge to it's container
-      posts.forEach((edge) => {
-        if (edge.node.frontmatter.type === 'post') {
-          blogPosts.push(edge.node)
-        } else if (edge.node.frontmatter.type === 'project') {
-          projectPosts.push(edge.node)
-        }
-
+      posts.forEach((edge, index) => {
+        const prev = index === 0 ? false : posts[index - 1]
+        const next = index === posts.length - 1 ? false : posts[index + 1]
+        createPage({
+          path: edge.node.frontmatter.path,
+          component: PostTemplate,
+          context: {
+            prev,
+            next
+          }
+        })
         if (edge.node.frontmatter.tags) {
           tags = tags.concat(edge.node.frontmatter.tags)
         }
@@ -69,32 +63,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
       // Remove duplicate tags
       tags = [...new Set(tags)]
-
-      blogPosts.forEach((node, index) => {
-        const prev = index === 0 ? false : blogPosts[index - 1]
-        const next = index === blogPosts.length - 1 ? false : blogPosts[index + 1]
-        createPage({
-          path: node.frontmatter.path,
-          component: PostTemplate,
-          context: {
-            prev,
-            next
-          }
-        })
-      })
-
-      projectPosts.forEach((node, index) => {
-        const prev = index === 0 ? false : projectPosts[index - 1]
-        const next = index === projectPosts.length - 1 ? false : projectPosts[index + 1]
-        createPage({
-          path: node.frontmatter.path,
-          component: PostTemplate,
-          context: {
-            prev,
-            next
-          }
-        })
-      })
 
       tags.forEach(tag => {
         createPage({
