@@ -16,6 +16,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   }
 }
 
+// Create post and tag pages
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
 
