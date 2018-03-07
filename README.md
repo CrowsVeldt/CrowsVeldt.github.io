@@ -1,3 +1,3 @@
 # My Personal Site
 
-Built with GatsbyJS
+Built with GatsbyJS and lots of tinkering.
