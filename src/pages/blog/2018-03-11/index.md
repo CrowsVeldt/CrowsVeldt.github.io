@@ -1,5 +1,5 @@
 ---
-path: '/blog/hiatus
+path: '/blog/hiatus'
 type: 'post'
 title: 'Hiatus'
 date: '2018-03-11'
